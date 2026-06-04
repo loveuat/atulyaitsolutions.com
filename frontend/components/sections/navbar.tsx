@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import Image from "next/image";
 
 const navLinks = [
   { name: "About Us", href: "/about" },
@@ -23,13 +24,24 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-primary transition-colors">
-              <span className="text-primary-foreground font-bold text-lg">A</span>
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-black dark:bg-white transition-colors">
+              <img
+                src="/aislogo.webp"
+                alt="Atulya IT Solutions Logo"
+                loading="eager"
+                className="w-10 h-10 object-contain rounded-xl"
+              />
             </div>
+
+          <div className="flex flex-col leading-tight">
             <span className="font-semibold text-lg text-foreground">
               Atulya IT Solutions
             </span>
-          </Link>
+            <span className="text-[10px] text-muted-foreground tracking-wide">
+              Analyze. Architect. Accelerate.
+            </span>
+          </div>
+        </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
