@@ -4,6 +4,7 @@ import {
   Search,
   ShoppingCart,
   LaptopMinimal,
+  Brain,
 } from "lucide-react";
 
 const services = [
@@ -55,6 +56,19 @@ const services = [
     step: 5,
     icon: LaptopMinimal,
     title: "Technical Education",
+    description:
+      "Our Tech Education program bridges the gap between theory and real-world application. We focus on hands-on learning, industry-relevant tools, and project-based training to equip you with job-ready skills.",
+    highlights: [
+      "Dedicated support",
+      "Regular check-ins",
+      "Performance tracking",
+    ],
+  },
+
+    {
+    step: 6,
+    icon: Brain,
+    title: "AI Tranning",
     description:
       "Our Tech Education program bridges the gap between theory and real-world application. We focus on hands-on learning, industry-relevant tools, and project-based training to equip you with job-ready skills.",
     highlights: [
