@@ -7,6 +7,7 @@ import {
   Brain,
 } from "lucide-react";
 
+
 const services = [
   {
     step: 1,
@@ -70,7 +71,7 @@ const services = [
     icon: Brain,
     title: "AI Training",
     description:
-      "AI Training helps machines learn from data, recognize patterns, and make intelligent decisions. It is the foundation of modern artificial intelligence systems.",
+      "Training helps machines learn from data, recognize patterns, and make intelligent decisions. It is the foundation of modern artificial intelligence systems.",
     highlights: [
       "Dedicated support",
       "Regular check-ins",
