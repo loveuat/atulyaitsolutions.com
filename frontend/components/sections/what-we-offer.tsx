@@ -68,9 +68,9 @@ const services = [
     {
     step: 6,
     icon: Brain,
-    title: "AI Tranning",
+    title: "AI Training",
     description:
-      "Our Tech Education program bridges the gap between theory and real-world application. We focus on hands-on learning, industry-relevant tools, and project-based training to equip you with job-ready skills.",
+      "AI Training helps machines learn from data, recognize patterns, and make intelligent decisions. It is the foundation of modern artificial intelligence systems.",
     highlights: [
       "Dedicated support",
       "Regular check-ins",
