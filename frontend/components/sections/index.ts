@@ -16,3 +16,4 @@ export { MissionSection } from "./mission-section";
 export { TimelineSection } from "./timeline-section";
 export { PortfolioSection } from "./portfolio-section";
 export { AboutUs } from "./aboutus";
+export { ContactForm } from "./contact";
