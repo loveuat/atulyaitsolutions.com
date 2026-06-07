@@ -61,6 +61,9 @@ error_log
 # Security plugins
 wp-content/wflogs/
 
+# WordPress config
+wp-config.php
+
 # Composer
 vendor/
 
