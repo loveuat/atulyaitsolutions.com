@@ -10,22 +10,22 @@ const values: Value[] = [
   {
     icon: <Star className="w-8 h-8" />,
     title: "Quality",
-    description: "We are committed to sourcing, vetting, and delivering the best tech talent globally.",
+    description: "We connect businesses with top-tier technology talent, delivering skilled professionals and innovative solutions that drive growth and success.",
   },
   {
     icon: <Award className="w-8 h-8" />,
     title: "Excellence",
-    description: "Our commitment to excellence drives us to consistently exceed expectations, delivering exceptional talent to all our clients.",
+    description: "We are committed to delivering outstanding results through skilled professionals, innovative thinking, and a customer-first approach.",
   },
   {
     icon: <Lightbulb className="w-8 h-8" />,
     title: "Innovation",
-    description: "We embrace new ideas and technologies and encourage our talent to continuously improve their technical skillset.",
+    description: "Driven by innovation, we continuously embrace emerging technologies and invest in developing skills that deliver exceptional results.",
   },
   {
     icon: <Users className="w-8 h-8" />,
     title: "Diversity",
-    description: "We embrace diverse perspectives and backgrounds, creating inclusive teams that drive innovation and success.",
+    description: "By bringing together talented professionals with diverse skills and experiences, we create innovative solutions that deliver exceptional results.",
   },
 ];
 

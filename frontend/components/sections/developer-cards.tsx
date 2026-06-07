@@ -3,45 +3,45 @@ import Image from "next/image";
 
 const developers = [
   {
-    name: "Laura Jensen",
-    role: "Machine Learning Engineer",
-    experience: "6+ years",
-    location: "Stockholm, Sweden",
-    skills: ["Python", "AWS"],
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
+    name: "Ramgopal Singh Lodhi",
+    role: "Full Stack Developer",
+    experience: "11+ years",
+    location: "Indore, India",
+    skills: ["Shopify", "PHP", "React","Node.js","SharePoint"],
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQFbjjsaoLEQuw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1641194952796?e=1782345600&v=beta&t=fmWKYewLtu2q8alV0qCflWbT0ApWRAf7hBB5r5fL-Ac",
   },
   {
-    name: "Meera Sharma",
-    role: "Frontend Developer",
-    experience: "4+ years",
-    location: "New Delhi, India",
-    skills: ["React", "Angular", "HTML"],
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=face",
+    name: "Sunil Yadav",
+    role: "Senior WordPress Developer",
+    experience: "12+ years",
+    location: "Indore, India",
+    skills: ["PHP", "Wordpress", "Webflow","HTML","CSS"],
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQHOzHQQtdr4mA/profile-displayphoto-scale_100_100/B4DZp20FXiGQAc-/0/1762929958125?e=1782345600&v=beta&t=EXFGxy9TCmOBFbHRCPbNyFy5AGrOqMLF4k5MfnRIYLg",
   },
   {
-    name: "Aditya Kapoor",
-    role: "Machine Learning Engineer",
-    experience: "6+ years",
+    name: "Atul Bramhe",
+    role: "Senior Business Development",
+    experience: "10+ years",
     location: "Hyderabad, India",
-    skills: ["Python", "C++"],
+    skills: ["Client acquisitio", "Lead generation", "Market research","Develop growth strategies"],
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
   },
   {
-    name: "Isabela Costa",
-    role: "Senior QA Developer",
+    name: "Alisa Gupta",
+    role: "UI/UX Designer",
     experience: "8+ years",
-    location: "Rio de Janeiro, Brazil",
-    skills: ["Java", "Python"],
+    location: "Pune, India",
+    skills: ["UI/UX design", "Wireframing", "User flow creation","Logo design","Brochure & flyer design"],
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face",
   },
-  {
+  /*{
     name: "Wei Zhang",
     role: "Fullstack Developer",
     experience: "7+ years",
     location: "Shanghai, China",
     skills: ["Node", "React", "Java"],
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
-  },
+  },*/
 ];
 
 export function DeveloperCards() {
@@ -57,7 +57,7 @@ export function DeveloperCards() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {developers.map((dev, index) => (
             <div
               key={index}
@@ -111,9 +111,10 @@ export function DeveloperCards() {
               </div>
 
               {/* Book a Call Button (visible on hover) */}
-              <button className="w-full mt-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+             {/*<button className="w-full mt-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                 Book a Call
-              </button>
+              </button>*/ }
+              
             </div>
           ))}
         </div>
