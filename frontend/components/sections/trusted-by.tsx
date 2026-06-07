@@ -1,32 +1,45 @@
 const companiesRow1 = [
-  "Keyloop",
-  "Logistics UK",
-  "i6",
-  "TechFlow",
-  "DataCore",
-  "CloudNine",
-  "DevStack",
-  "InnovateTech",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "Vue.js",
+  "Angular",
+  "Nuxt.js",
+  "jQuery",
+  "Tailwind CSS"
 ];
 
 const companiesRow2 = [
-  "StartupHub",
-  "FinanceFlow",
-  "HealthTech",
-  "EduPro",
-  "RetailMax",
-  "AutoDrive",
-  "GreenEnergy",
-  "SmartCity",
+  "PHP",
+  "Node.js",
+  "REST API",
+  "GraphQL",
+  "Laravel",
+  "WordPress",
+  "Shopify",
+  "Python",
+  "C# (.NET)",
+   "Java",
 ];
 
 export function TrustedBy() {
   return (
     <section className="py-16 bg-background overflow-hidden">
       <div className="container mx-auto px-4 mb-8">
-        <h3 className="text-center text-sm uppercase tracking-widest text-muted-foreground mb-8">
-          Trusted by leading companies
-        </h3>
+        <div className="text-center mb-16">
+         <span className="text-primary text-sm uppercase tracking-widest font-medium">
+            TECHNOLOGY EXPERTISE
+          </span>
+             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
+          Our Technology Stack
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Scalable Solutions, Smart Technology
+          </p>
+         </div>
       </div>
 
       <div className="space-y-6">

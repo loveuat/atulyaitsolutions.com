@@ -17,33 +17,68 @@ export function PricingComparison() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Traditional Hiring */}
-          <div className="bg-card rounded-2xl p-8 border border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Traditional Hiring max-w-4xl mx-auto */}
+        
+          
+           <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-center mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                Hiring in UK/US
+                Starter Plan
               </h3>
               <div className="text-4xl font-bold text-foreground">
-                £80k - £120k
+                $399 - $499
                 <span className="text-lg font-normal text-muted-foreground">/year</span>
               </div>
             </div>
 
             <ul className="space-y-4">
               {[
-                { text: "High salary costs", included: false },
-                { text: "Long hiring process (2-3 months)", included: false },
-                { text: "Limited talent pool", included: false },
-                { text: "Recruitment fees (15-25%)", included: false },
-                { text: "Office costs & overheads", included: false },
+                { text: "Responsive Website Design", included: true },
+                { text: "Up to 5 Pages", included: true },
+                { text: "Basic SEO Setup", included: true },
+                { text: "Contact Form Integration", included: true },
+                { text: "1 Month Support", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
-                  <X className="w-5 h-5 text-destructive" />
-                  <span className="text-muted-foreground">{item.text}</span>
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-foreground">{item.text}</span>
                 </li>
               ))}
             </ul>
+              <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
+              Get Started
+            </Button>
+          </div>
+
+          <div className="bg-card rounded-2xl p-8 border border-border">
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-semibold text-muted-foreground mb-2">
+                Professional Plan
+              </h3>
+              <div className="text-4xl font-bold text-foreground">
+                $899 - $999
+                <span className="text-lg font-normal text-muted-foreground">/year</span>
+              </div>
+            </div>
+
+            <ul className="space-y-4">
+              {[
+                { text: "Up to 15 Custom Pages", included: true },
+                { text: "Advanced UI/UX Design", included: true },
+                { text: "CMS Integration", included: true },
+                { text: "SEO Optimization", included: true },
+                { text: "3 Month Support", included: true },
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+              <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
+              Get Started
+            </Button>
           </div>
 
           {/* SmartWorking */}
@@ -54,21 +89,22 @@ export function PricingComparison() {
 
             <div className="text-center mb-8">
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                Hiring with SmartWorking
+                Enterprise Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                £40k - £60k
+                 $799 - $3000
+
                 <span className="text-lg font-normal text-muted-foreground">/year</span>
               </div>
             </div>
 
             <ul className="space-y-4">
               {[
-                { text: "Save up to 50% on costs", included: true },
-                { text: "48-hour candidate matching", included: true },
-                { text: "Global talent pool (500k+ devs)", included: true },
-                { text: "No upfront recruitment fees", included: true },
-                { text: "Fully remote, flexible teams", included: true },
+                { text: "Custom Web & Mobile Solutions", included: true },
+                { text: "E-Commerce Development", included: true },
+                { text: "API Integrations", included: true },
+                { text: "Cloud Deployment", included: true },
+                { text: "Dedicated Project Manager", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-500" />

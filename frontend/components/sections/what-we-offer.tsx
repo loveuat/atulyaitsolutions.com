@@ -14,11 +14,11 @@ const services = [
     icon: Code,
     title: "Web Apps Development",
     description:
-      "Transform your business with powerful, custom-built web applications. We develop scalable, and user-friendly web apps tailored to your unique needs. From idea to deployment, our solutions streamline workflows, enhance user engagement & digital growth.",
+      "Transform your ideas into powerful, scalable web applications tailored to your business needs. We build fast, secure, and user-friendly web solutions that improve efficiency, automate workflows, and deliver exceptional user experiences.",
     highlights: [
-      "Technical expertise",
-      "Communication skills",
-      "Background screening",
+      "Custom Web Application Development",
+      "Responsive & User-Friendly Design",
+      "Secure & Scalable Architecture",
     ],
   },
   {
@@ -26,19 +26,19 @@ const services = [
     icon: Smartphone,
     title: "Mobile Apps Development",
     description:
-      "Bring your ideas to life with our custom mobile app development services. high-performance apps for iOS and Android that deliver seamless user experiences. Whether it&apos;s a startup or a full-scale enterprise, we create apps that engage, scale, and succeed.",
-    highlights: ["Choose perfect candidates", "Pay nothing until they join"],
+      "Bring your ideas to life with high-performance mobile applications designed for iOS and Android platforms. We create intuitive, feature-rich, and scalable mobile apps that enhance user engagement, streamline business operations, and deliver seamless experiences across all devices.",
+    highlights: ["Custom Mobile App Development", "Cross-Platform Compatibility", "Secure & Scalable Solutions"],
   },
   {
     step: 3,
     icon: Search,
     title: "SEO & Digital Marketing",
     description:
-      "Boost your online visibility and drive targeted traffic with our expert SEO and digital marketing services. From keyword optimization and content strategy to paid campaigns and analytics, we help your brand rank higher and convert better.",
+      "Boost your online presence and reach the right audience with data-driven SEO and digital marketing strategies. We help businesses increase website traffic, improve search engine rankings, generate quality leads, and maximize ROI through targeted marketing.",
     highlights: [
-      "HR & payroll handled",
-      "Productivity tools",
-      "Simple monthly invoice",
+      "Search Engine Optimization (SEO)",
+      "Social Media Marketing (SMM)",
+      "Lead Generation & Growth Strategy",
     ],
   },
   {
@@ -46,11 +46,11 @@ const services = [
     icon: ShoppingCart,
     title: "E-Commerce Websites",
     description:
-      "Unlock the full potential of online selling with our custom eCommerce solutions. From seamless user experience to secure payment integration, we build scalable, and conversion-driven stores. Whether you&apos;re launching a new brand we craft eCommerce platforms.",
+      "Launch and grow your online business with a powerful, user-friendly e-commerce website. We create secure, scalable, and conversion-focused online stores that provide seamless shopping experiences, streamline operations, and help increase sales across all devices.",
     highlights: [
-      "Dedicated support",
-      "Regular check-ins",
-      "Performance tracking",
+      "Custom Online Store Development",
+      "Secure Payment Gateway Integration",
+      "Mobile Friendly Shopping Experience",
     ],
   },
   {
@@ -58,11 +58,11 @@ const services = [
     icon: LaptopMinimal,
     title: "Technical Education",
     description:
-      "Our Tech Education program bridges the gap between theory and real-world application. We focus on hands-on learning, industry-relevant tools, and project-based training to equip you with job-ready skills.",
+      "Empower your future with industry-focused technical education designed to build practical skills and real-world expertise. Our programs provide hands-on learning, expert guidance, and the latest technology training to help students and professionals stay competitive.",
     highlights: [
-      "Dedicated support",
-      "Regular check-ins",
-      "Performance tracking",
+      "Industry Relevant Training Programs",
+      "Hands On Learning & Practical Projects",
+      "Expert Mentorship & Career Support",
     ],
   },
 

@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -22,19 +22,19 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Upslopebrewing E-Commerce Platform",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and analytics dashboard.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    link: "#",
+    image: "/upslopebrewing/Home-Page-Pic-Final.jpg",
+    description: "Meteorologically speaking, it’s a front range-covering, water-table-filling, snow-dumping weather pattern that anyone with bindings and a roof rack would die for. Beerologically speaking, it’s carbonated gold. In 2008, Matt Cutter, Henry Wood and Dany Page, kissed their homes in Cleveland.",
+    technologies: ["PHP", "Wordpress", "HTML", "CSS", "Stripe"],
+    link: "https://upslopebrewing.com",
     webPreviews: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+      "/upslopebrewing/Layer-5.jpg?w=800&h=500&fit=crop",
+      "/upslopebrewing/banner.png?w=800&h=500&fit=crop",
     ],
     mobilePreviews: [
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1605170439002-90845e8c0137?w=300&h=600&fit=crop",
+      "/upslopebrewing/tap_room_bg.jpg?w=300&h=600&fit=crop",
+      "/upslopebrewing/sustainability.jpg?w=300&h=600&fit=crop",
     ],
   },
   {
@@ -56,9 +56,9 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 3,
-    title: "FinTech Dashboard",
+    title: "Investaxresearch",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    image: "/upslopebrewing/sustainability.jpg?w=800&h=600&fit=crop",
     description: "Real-time financial analytics dashboard with advanced charting, portfolio tracking, and AI-powered insights.",
     technologies: ["Next.js", "Python", "PostgreSQL", "TensorFlow"],
     link: "#",
@@ -293,12 +293,21 @@ export function PortfolioSection() {
                 </div>
 
                 {/* View Project Button */}
-                {selectedItem.link && (
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Project
-                  </Button>
-                )}
+                {selectedItem.link && selectedItem.link !== "#" && (
+  <Button
+    asChild
+    className="bg-primary text-primary-foreground hover:bg-primary/90"
+  >
+    <Link
+      href={selectedItem.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <ExternalLink className="mr-2 h-4 w-4" />
+      View Project
+    </Link>
+  </Button>
+)}
               </div>
             )}
           </DialogContent>

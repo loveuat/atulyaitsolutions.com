@@ -1,37 +1,55 @@
-import { Users, Video, Rocket, HeadphonesIcon } from "lucide-react";
+import { Users, Video, Rocket, HeadphonesIcon, Cake, FolderCode, Award, InfoIcon } from "lucide-react";
 
 const steps = [
   {
     step: 1,
     icon: Users,
-    title: "Tailored Matching & Rigorous Vetting",
+    title: "Requirement Gathering",
     description:
-      "Our matching process starts after a call discussing your requirements with a UK-based expert. Candidates are evaluated through multiple interviews, rigorous assessments, and live coding challenges.",
-    highlights: ["Technical expertise", "Communication skills", "Background screening"],
+      "Requirement Gathering involves discussing and analyzing project requirements to define functionality, design preferences, business objectives.",
+    highlights: ["Understand client objectives", "Define project scope and features", "Identify timelines and deliverables"],
   },
   {
     step: 2,
     icon: Video,
-    title: "Meet the Candidates",
+    title: "Prototype",
     description:
-      "Select candidates from your personalised shortlist to interview. Evaluate their technical skills and alignment with your team&apos;s goals and culture.",
-    highlights: ["Choose perfect candidates", "Pay nothing until they join"],
+     "A prototype is a visual representation of the website or application that helps stakeholders review the layout, user flow, and functionality before development begins.",
+    highlights: ["Create wireframes and page layouts", "Define user journeys and navigation structure","Design interactive mockups for review."],
   },
   {
     step: 3,
-    icon: Rocket,
-    title: "Onboarding",
+    icon: Cake,
+    title: "UI/UX Design",
     description:
-      "We manage every aspect of the onboarding process, allowing you to focus on what matters - growing your business.",
-    highlights: ["HR & payroll handled", "Productivity tools", "Simple monthly invoice"],
+      "UI/UX Design focuses on creating an attractive, user-friendly, and engaging interface that provides a seamless experience across all devices.",
+    highlights: ["Responsive layouts", "Modern visual styling", "Easy navigation structure"],
   },
   {
     step: 4,
-    icon: HeadphonesIcon,
-    title: "Ongoing Support",
+    icon: FolderCode,
+    title: "Development",
     description:
-      "Our dedicated account managers provide continuous support to ensure your team&apos;s success and satisfaction.",
-    highlights: ["Dedicated support", "Regular check-ins", "Performance tracking"],
+      "The development phase involves converting approved designs into a fully functional, responsive, and secure website or application with all required features and integrations.",
+    highlights: ["Frontend development", "Backend development", "API integration"],
+  },
+
+   {
+    step: 5,
+    icon: Award,
+    title: "Quality Assurance",
+    description:
+      "Quality Assurance ensures that the website or application functions correctly, performs efficiently, and delivers a smooth user experience before launch.",
+    highlights: ["Functionality testing", "Bug identification", "Performance testing"],
+  },
+
+   {
+    step: 6,
+    icon: InfoIcon,
+    title: "Support & Maintenance",
+    description:
+      "Support & Maintenance ensures the website or application remains secure, updated, and performs optimally after deployment.",
+    highlights: ["Regular updates", "Bug fixes", "Security monitoring"],
   },
 ];
 
@@ -44,14 +62,14 @@ export function HowItWorks() {
             How It Works
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            Simple 4-Step Process
+            Simple 6-Step Process
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From matching to ongoing support, we handle everything so you can focus on building.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((item) => (
             <div
               key={item.step}
