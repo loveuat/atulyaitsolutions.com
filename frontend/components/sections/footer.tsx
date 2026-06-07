@@ -15,15 +15,26 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-primary transition-colors">
-                <span className="text-primary-foreground font-bold text-lg">A</span>
-              </div>
-              <span className="font-semibold text-lg text-foreground">
-                Atulya IT Solutions
-              </span>
-            </Link>
-            <p className="text-muted-foreground text-sm mb-6 max-w-xs">
+             <Link href="/" className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-black dark:bg-white transition-colors">
+              <img
+                src="/aislogo.webp"
+                alt="Atulya IT Solutions Logo"
+                loading="eager"
+                className="w-10 h-10 object-contain rounded-xl"
+              />
+            </div>
+
+          <div className="flex flex-col leading-tight">
+            <span className="font-semibold text-lg text-foreground">
+              Atulya IT Solutions
+            </span>
+            <span className="text-[10px] text-muted-foreground tracking-wide">
+              Analyze. Architect. Accelerate.
+            </span>
+          </div>
+        </Link>
+            <p className="pt-4 text-muted-foreground text-sm mb-6 max-w-xs">
               Connecting businesses with the world&apos;s top 1% of vetted
               developers. Remote hiring made simple, secure, and cost-effective.
             </p>
