@@ -13,8 +13,7 @@ import {
   CTA,
   Footer,
   ValuesSection,
-  MissionSection,
-  TimelineSection,
+  /*TimelineSection,*/
   PortfolioSection,
 } from "@/components/sections";
 
@@ -29,13 +28,10 @@ export default function Home() {
       <HowItWorks />
       <DeveloperCards />
       <ValuesSection />
-      <MissionSection />
-      <TimelineSection />
+      {/*<TimelineSection />*/}
       <PortfolioSection />
       <PricingComparison />
-      <CaseStudies />
       <Testimonials />
-      <FAQSection />
       <CTA />
       <Footer />
     </main>
