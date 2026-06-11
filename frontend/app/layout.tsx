@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
+import { GoogleTagManager } from "@next/third-parties/google"; 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import './globals.css'
 
 const geistSans = Geist({ 
@@ -13,26 +14,44 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
+
+
 export const metadata: Metadata = {
-  title: 'Atulya IT Solutions - Web & Mobile App Development',
-  description: 'We build reliable, scalable & future-ready web and mobile solutions. Save up to 50% on development costs with our expert team.',
-  generator: 'v0.app',
+    metadataBase: new URL("https://atulyaitsolutions.com"),
+
+  title: {
+    default: "Atulya IT Solutions",
+    template: "%s | Atulya IT Solutions",
+  },
+
+  description:
+    "Web Development, WordPress, Next.js, SEO and Digital Marketing Services.",
+
+  keywords: [
+    "Web Development Company",
+    "WordPress Development",
+    "Next.js Development",
+    "React Development",
+    "SEO Services",
+    "Website Maintenance",
+    "Digital Marketing",
+  ],
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/favicon-48x48.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/favicon-48x48.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/favicon-48x48.png',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/favicon-48x48.png',
   },
 }
 
@@ -59,8 +78,9 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' && <GoogleTagManager gtmId="GTM-NGSMM74C" /> && <GoogleAnalytics gaId="G-4EEMQTK68G" />}
       </body>
+      
     </html>
   )
 }

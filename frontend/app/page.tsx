@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Navbar,
   Hero,
@@ -16,6 +17,12 @@ import {
   /*TimelineSection,*/
   PortfolioSection,
 } from "@/components/sections";
+
+export const metadata: Metadata = {
+  title: "Web Development Company | WordPress, Next.js & SEO Services",
+  description:
+    "Atulya IT Solutions provides Web Development, WordPress Development, Next.js Development, SEO Services, Website Maintenance and Digital Marketing solutions.",
+};
 
 export default function Home() {
   return (
