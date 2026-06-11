@@ -1,51 +1,76 @@
-import Link from "next/link";
-import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import Link from "next/link"
+import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react"
 
 const footerLinks = {
-  Company: ["About", "Careers", "Press", "Partners"],
-  Services: ["How We Hire", "Pricing", "Enterprise", "For Developers"],
-  Resources: ["Blog", "AI Academy", "Case Studies", "Documentation"],
-  Legal: ["Privacy Policy", "Terms of Service", "Cookie Policy", "GDPR"],
-};
+  Company: [
+    { label: "About", href: "/about" },
+    { label: "Careers", href: "/careers" },
+    { label: "Press", href: "/press" },
+    { label: "Partners", href: "/partners" },
+  ],
+  Services: [
+    { label: "How We Hire", href: "/how-we-hire" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "Enterprise", href: "/enterprise" },
+    { label: "For Developers", href: "/for-developers" },
+  ],
+  Resources: [
+    { label: "Blog", href: "/blog" },
+    { label: "AI Academy", href: "/ai-academy" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Documentation", href: "/docs" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Service", href: "/terms" },
+    { label: "Cookie Policy", href: "/cookies" },
+    { label: "GDPR", href: "/gdpr" },
+  ],
+}
+
+const socials = [
+  { Icon: Linkedin, href: "#", label: "LinkedIn" },
+  { Icon: Twitter, href: "#", label: "Twitter" },
+  { Icon: Facebook, href: "#", label: "Facebook" },
+  { Icon: Instagram, href: "#", label: "Instagram" },
+]
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="border-t border-border bg-card">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-2">
-             <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-black dark:bg-white transition-colors">
-              <img
-                src="/aislogo.webp"
-                alt="Atulya IT Solutions Logo"
-                loading="eager"
-                className="w-10 h-10 object-contain rounded-xl"
-              />
-            </div>
-
-          <div className="flex flex-col leading-tight">
-            <span className="font-semibold text-lg text-foreground">
-              Atulya IT Solutions
-            </span>
-            <span className="text-[10px] text-muted-foreground tracking-wide">
-              Analyze. Architect. Accelerate.
-            </span>
-          </div>
-        </Link>
-            <p className="pt-4 text-muted-foreground text-sm mb-6 max-w-xs">
-              Connecting businesses with the world&apos;s top 1% of vetted
-              developers. Remote hiring made simple, secure, and cost-effective.
+            <Link href="/" className="flex items-center gap-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-black transition-colors">
+                <img
+                  src="/aislogo.webp"
+                  alt="Atulya IT Solutions Logo"
+                  loading="eager"
+                  className="h-10 w-10 rounded-xl object-contain"
+                />
+              </div>
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg font-semibold text-foreground">Atulya IT Solutions</span>
+                <span className="text-[10px] tracking-wide text-muted-foreground">
+                  Analyze. Architect. Accelerate.
+                </span>
+              </div>
+            </Link>
+            <p className="mb-6 max-w-xs pt-4 text-sm text-muted-foreground">
+              Connecting businesses with the world&apos;s top 1% of vetted developers. Remote hiring made simple,
+              secure, and cost-effective.
             </p>
             <div className="flex gap-4">
-              {[Linkedin, Twitter, Facebook, Instagram].map((Icon, idx) => (
+              {socials.map(({ Icon, href, label }) => (
                 <a
-                  key={idx}
-                  href="#"
-                  className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-primary/20 transition-colors"
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary/20 hover:text-foreground"
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
@@ -54,16 +79,16 @@ export function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-semibold text-foreground mb-4">{category}</h4>
+              <h4 className="mb-4 font-semibold text-foreground">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      {link}
-                    </a>
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -72,23 +97,23 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © 2024 - 2026 Atulya IT Solutions. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">
+            <Link href="/privacy" className="transition-colors hover:text-foreground">
               Privacy
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-foreground">
               Terms
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            </Link>
+            <Link href="/cookies" className="transition-colors hover:text-foreground">
               Cookies
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }
