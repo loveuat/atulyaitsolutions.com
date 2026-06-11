@@ -157,3 +157,103 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 		}
 	}
 endif;
+
+
+
+
+
+/**
+ * 2. CORS HEADERS (Next.js se request allow karne ke liye)
+ */
+add_action('rest_api_init', function () {
+    remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');
+    add_filter('rest_pre_serve_request', function ($value) {
+        header('Access-Control-Allow-Origin: http://localhost:3000'); // production mein '*' ki jagah apna domain dalein
+        header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+        header('Access-Control-Allow-Headers: Content-Type, Authorization');
+        return $value;
+    });
+}, 15);
+
+
+add_action('rest_api_init', function () {
+
+    register_rest_route('atul/v1', '/contact', [
+        'methods' => ['GET', 'POST'],
+        'callback' => function () {
+            return [
+                'success' => true,
+                'message' => 'Route working'
+            ];
+        },
+        'permission_callback' => '__return_true',
+    ]);
+
+});
+
+/**
+ * 4. FORM HANDLER - data save + email
+ */
+function atul_contact_form($request)
+{
+    $data = $request->get_json_params();
+
+    // Agar JSON parse na ho to fallback
+    if (empty($data)) {
+        $data = $request->get_params();
+    }
+
+    // Validation
+    if (empty($data['name']) || empty($data['email'])) {
+        return new WP_REST_Response([
+            'success' => false,
+            'message' => 'Name and email are required.',
+        ], 400);
+    }
+
+    $name    = sanitize_text_field($data['name']);
+    $email   = sanitize_email($data['email']);
+    $phone   = sanitize_text_field($data['phone'] ?? '');
+    $message = sanitize_textarea_field($data['message'] ?? '');
+
+    global $wpdb;
+    $table_name = 'ais_custom_contacts';
+
+    // DB mein insert
+    $inserted = $wpdb->insert($table_name, [
+        'name'       => $name,
+        'email'      => $email,
+        'phone'      => $phone,
+        'message'    => $message,
+        'created_at' => current_time('mysql'),
+    ]);
+
+    // Agar insert fail ho to exact DB error bhejo (debugging ke liye)
+    if ($inserted === false) {
+        return new WP_REST_Response([
+            'success'  => false,
+            'db_error' => $wpdb->last_error,
+            'message'  => 'Database insert failed.',
+        ], 500);
+    }
+
+    // Admin ko email bhejo
+    $admin_email = get_option('admin_email');
+    $subject     = 'New Contact Form Submission';
+    $body        = "Name: $name\n";
+    $body       .= "Email: $email\n";
+    $body       .= "Phone: $phone\n";
+    $body       .= "Message: $message\n";
+    $headers     = ['Content-Type: text/plain; charset=UTF-8', "Reply-To: $name <$email>"];
+
+    $mail_sent = wp_mail($admin_email, $subject, $body, $headers);
+
+    return new WP_REST_Response([
+        'success'   => true,
+        'mail_sent' => $mail_sent,
+        'id'        => $wpdb->insert_id,
+    ], 200);
+}
+
+
+
