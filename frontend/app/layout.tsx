@@ -4,7 +4,9 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { GoogleTagManager } from "@next/third-parties/google"; 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import './globals.css'
-
+import   AccessibilityButton  from '@/components/sections/accessibilityButton';
+import AccessibilityPanel from '@/components/sections/accessibilityPanel';
+import {AccessibilityProvider} from '@/components/sections/accessibilityProvider';
 const geistSans = Geist({ 
   subsets: ["latin"],
   variable: "--font-geist-sans",
@@ -90,7 +92,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+       {/* <AccessibilityProvider> */}
           {children}
+             {/* <AccessibilityButton />
+          <AccessibilityPanel />
+        </AccessibilityProvider> */}
         </ThemeProvider>
         {process.env.NODE_ENV === 'production' && <GoogleTagManager gtmId="GTM-NGSMM74C" /> && <GoogleAnalytics gaId="G-4EEMQTK68G" />}
       </body>
