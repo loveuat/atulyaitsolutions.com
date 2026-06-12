@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://atulyaitsolutions.com/
+
+# Sitemaps
+Sitemap: https://atulyaitsolutions.com/sitemap.xml
+
+LLM: https://yourdomain.com/llms.txt
+
+LLMS-FULL: https://yourdomain.com/llms-full.txt
