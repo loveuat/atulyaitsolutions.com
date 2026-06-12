@@ -8,6 +8,6 @@ Host: https://atulyaitsolutions.com/
 # Sitemaps
 Sitemap: https://atulyaitsolutions.com/sitemap.xml
 
-LLM: https://yourdomain.com/llms.txt
+LLM: https://atulyaitsolutions.com/llms.txt
 
-LLMS-FULL: https://yourdomain.com/llms-full.txt
+LLMS-FULL: https://atulyaitsolutions.com/llms-full.txt
