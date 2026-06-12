@@ -19,4 +19,8 @@ export { AboutUs } from "./aboutus";
 export { ContactForm } from "./contact";
 export { ServicesGrid } from "./services";
 export {Careers } from "./careers";
-export { ProductGrid } from "./ourproduct";
+export { OurProducts } from "./ourproduct";
+export { WordpressMaintenance } from "./wordpress-maintenance";
+export { NextGenerationTheme } from "./next-generation-wordpress-theme";
+
+

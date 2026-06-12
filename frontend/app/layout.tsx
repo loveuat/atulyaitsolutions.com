@@ -39,19 +39,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon-48x48.png',
+        url: '/latestlogo500.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/favicon-48x48.png',
+        url: '/latestlogo500.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/favicon-48x48.png',
+        url: '/latestlogo500.png',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/favicon-48x48.png',
+    apple: '/latestlogo500.png',
   },
 }
 
@@ -66,10 +66,24 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
-}>) {
+}>) { 
+   const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Atulya IT Solutions",
+    url: "https://atulyaitsolutions.com",
+    logo: "https://atulyaitsolutions.com/aislogo.webp",
+  };
+
   return (
     <html lang="en" className="bg-background" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

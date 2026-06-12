@@ -1,8 +1,7 @@
-import { Metadata } from "next";
 import {
   Navbar,
   Hero,
-  ProductGrid,
+  OurProducts ,
   CTA,
  Footer,
 } from "@/components/sections";
@@ -19,10 +18,11 @@ export default  function OurServicesPage() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <ProductGrid />
+      <OurProducts />
       <CTA />
      <Footer />
     </main>
   );
 }
+
 
