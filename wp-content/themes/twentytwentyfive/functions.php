@@ -180,13 +180,9 @@ add_action('rest_api_init', function () {
 
     register_rest_route('atul/v1', '/contact', [
         'methods' => ['GET', 'POST'],
-        'callback' => function () {
-            return [
-                'success' => true,
-                'message' => 'Route working'
-            ];
-        },
         'permission_callback' => '__return_true',
+         'callback' => 'atul_contact_form',
+
     ]);
 
 });

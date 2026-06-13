@@ -39,19 +39,19 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 2,
-    title: "Healthcare App",
+    title: "PlayFlix : K-Drama",
     category: "Mobile App",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-    description: "A comprehensive healthcare application for patient management, appointment scheduling, and telemedicine consultations.",
+    image: "/playFlix/unnamed (1).webp?w=800&h=600&fit=crop",
+    description: "Playflix An app for every K-drama fan - Fall in love and binge longer - with Playflix, your ultimate destination for K-dramas that speak to your heart.",
     technologies: ["React Native", "Firebase", "Node.js"],
-    link: "#",
+    link: "https://play.google.com/store/apps/details?id=com.goldflix.playfixapplication",
     webPreviews: [
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=500&fit=crop",
+      "/playFlix/unnamed (1).webp?w=800&h=500&fit=crop",
+      "/playFlix/unnamed (2).webp?w=800&h=500&fit=crop",
     ],
     mobilePreviews: [
-      "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=300&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?w=300&h=600&fit=crop",
+      "/playFlix/unnamed (3).webp?w=300&h=600&fit=crop",
+      "/playFlix/unnamed (4).webp?w=300&h=600&fit=crop",
     ],
   },
   {
@@ -71,38 +71,22 @@ const portfolioItems: PortfolioItem[] = [
       "/investaxresearch/business-6174790_640.jpg?w=300&h=600&fit=crop",
     ],
   },
-  {
-    id: 4,
-    title: "Logistics Management",
-    category: "Enterprise Software",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
-    description: "End-to-end logistics management system with route optimization, real-time tracking, and inventory management.",
-    technologies: ["Angular", "Java", "MySQL", "AWS"],
-    link: "#",
-    webPreviews: [
-      "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=500&fit=crop",
-    ],
-    mobilePreviews: [
-      "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=300&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1590925527273-44cc949df498?w=300&h=600&fit=crop",
-    ],
-  },
+ 
   {
     id: 5,
-    title: "Social Media App",
+    title: "Radio 24",
     category: "Mobile App",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
-    description: "A feature-rich social media application with real-time messaging, stories, and content recommendation engine.",
-    technologies: ["Flutter", "Dart", "Firebase", "ML Kit"],
-    link: "#",
+    image: "/radio24/11.webp?w=800&h=600&fit=crop",
+    description: "Radio24 for mobile and website is an app to play internet radio station. Radio24 allows you to listen and enjoy a variety of genres like classical, rock, pop, gospen, songs, music, talks, news, comedy, concerts.",
+    technologies: ["React Native", "Firebase", "Node.js"],
+    link: "https://play.google.com/store/apps/details?id=radio.music.razaweb",
     webPreviews: [
-      "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&h=500&fit=crop",
-      "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800&h=500&fit=crop",
+      "/radio24/16.webp?w=800&h=500&fit=crop",
+      "/radio24/17.webp?w=800&h=500&fit=crop",
     ],
     mobilePreviews: [
-      "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=300&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=300&h=600&fit=crop",
+      "/radio24/14.webp?w=300&h=600&fit=crop",
+      "/radio24/15.webp?w=300&h=600&fit=crop",
     ],
   },
   {
@@ -177,7 +161,7 @@ const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-const categories = ["All", "Web Development", "Mobile App", "Enterprise Software"];
+const categories = ["All", "Web Development", "Mobile App"];
 
 export function PortfolioSection() {
   const [activeCategory, setActiveCategory] = useState("All");
