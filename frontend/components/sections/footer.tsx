@@ -21,8 +21,8 @@ const footerLinks = {
     { label: "Documentation", href: "/docs" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms of Service", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
     { label: "Cookie Policy", href: "/cookies" },
     { label: "GDPR", href: "/gdpr" },
   ],
@@ -102,14 +102,11 @@ export function Footer() {
             © 2024 - 2026 Atulya IT Solutions. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <Link href="/privacy" className="transition-colors hover:text-foreground">
-              Privacy
+            <Link href="/privacy-policy" className="transition-colors hover:text-foreground">
+              Privacy Policy
             </Link>
-            <Link href="/terms" className="transition-colors hover:text-foreground">
-              Terms
-            </Link>
-            <Link href="/cookies" className="transition-colors hover:text-foreground">
-              Cookies
+            <Link href="/terms-of-service" className="transition-colors hover:text-foreground">
+              Terms of Service
             </Link>
           </div>
         </div>
