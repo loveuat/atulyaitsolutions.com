@@ -65,7 +65,7 @@ wp-content/wflogs/
 wp-config.php
 
 # Composer
-vendor/
+#vendor/
 
 # Database Dumps
 *.sql
