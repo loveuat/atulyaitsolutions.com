@@ -159,9 +159,29 @@ const portfolioItems: PortfolioItem[] = [
       "/luxurway/Untitled+design+(22).webp?w=300&h=600&fit=crop",
     ],
   },
+
+  
+   {
+    id: 10,
+    title: "Aicerts",
+    category: "Digital Marketing",
+    image: "/news/freepik__the-style-is-candid-image-photography-with-natural__86941-1.png?w=800&h=600&fit=crop",
+    description: "Bond desks rarely buzz louder than they did when Oracle opened its 2026 funding window.",
+    technologies: ["SEO", "Wordpress", "HTML", "CSS"],
+    link: "https://www.aicerts.ai/news/",
+    webPreviews: [
+      "/news/A-symbolic-handshake-between-a-human-and-a-futuristic-AI-powered-robot-1024x585.jpeg?w=800&h=500&fit=crop",
+      "/news/ethical-ai-in-multilingual-markets.jpg?w=800&h=500&fit=crop",
+    ],
+    mobilePreviews: [
+      "/news/future-of-defense-ai-india.jpg?w=300&h=600&fit=crop",
+      "/news/futuristic_tech_lab_with_Metas_logo_glowing_in_0-1024x573.jpg?w=300&h=600&fit=crop",
+    ],
+  },
+
 ];
 
-const categories = ["All", "Web Development", "Mobile App"];
+const categories = ["All", "Web Development", "Mobile App", "Digital Marketing"];
 
 export function PortfolioSection() {
   const [activeCategory, setActiveCategory] = useState("All");

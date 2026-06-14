@@ -24,7 +24,7 @@ const products = [
 
 export  function OurProducts() {
   return (
-    <section className="bg-black py-24 px-6">
+    <section className="bg-background py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
@@ -32,11 +32,11 @@ export  function OurProducts() {
             Premium Solutions
           </span>
 
-          <h2 className="mt-4 text-5xl md:text-6xl font-black text-white">
+          <h2 className="mt-4 text-5xl md:text-6xl font-black text-foregroun">
             Our <span className="text-orange-500">Products</span>
           </h2>
 
-          <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             Powerful WordPress solutions designed to help businesses grow,
             scale and perform better online.
           </p>
@@ -47,7 +47,7 @@ export  function OurProducts() {
           {products.map((product) => (
             <div
               key={product.slug}
-              className="group relative overflow-hidden rounded-3xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8 transition-all duration-500 hover:border-orange-500 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all duration-500 hover:border-orange-500 hover:-translate-y-2"
             >
               {/* Glow */}
               <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-orange-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition" />
@@ -63,12 +63,12 @@ export  function OurProducts() {
               </div>
 
               {/* Title */}
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold text-card-foreground mb-4">
                 {product.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 mb-8 leading-relaxed">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 {product.description}
               </p>
 
@@ -77,7 +77,7 @@ export  function OurProducts() {
                 {product.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center text-gray-300"
+                    className="flex items-center text-muted-foreground"
                   >
                     <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
                     {feature}

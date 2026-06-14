@@ -2,11 +2,84 @@
 
 import Image from "next/image";
 export const services = [
+   {
+    image: "/services/6.jpg",
+    title: "WordPress maintenance services",
+    description:
+      "Keep your WordPress website secure, updated, and running at peak performance.",
+    features: [
+    "Core, Plugin & Theme Updates",
+  "Security & Backup Management",
+  "Performance Optimization"
+    ],
+  },
+
+{
+    image: "/services/4.jpg",
+    title: "Shopify App Maintenance Services",
+    description:
+      "Professional Shopify maintenance to keep your website secure, fast, and up-to-date.",
+    features: [
+  "Product & Inventory Management",
+  "Store Performance Optimization",
+  "App Updates & Maintenance",
+
+    ],
+  },
+
+   {
+    image: "/services/3.jpg",
+    title: "WooCommerce Maintenance Services",
+    description:
+      "Maintain and optimize your WooCommerce store for better performance, security, and conversions.",
+    features: [
+      "Store Updates",
+      "Payment Gateway Support",
+      "Performance Optimization",
+    ],
+  },
+
+  {
+    image: "/services/seo.webp",
+    title: "SEO Maintenance Services",
+    description:
+      "Maintain and improve your website's search engine rankings with ongoing SEO monitoring, content optimization, technical audits, and performance tracking.",
+    features: [
+       "Keyword Ranking Monitoring",
+       "On-Page SEO Optimization",
+       "Monthly SEO Reporting"
+    ],
+  },
+
+  {
+    image: "/services/7.jpg",
+    title: "React Website Maintenance Services",
+    description:
+      "Keep your React website secure, fast, and up-to-date with proactive maintenance, performance monitoring, and ongoing technical support.",
+    features: [
+  "Component & UI Maintenance",
+  "Performance Optimization",
+  "Bug Fixes & Troubleshooting",
+    ],
+  },
+
+   {
+    image: "/services/nodejs.png",
+    title: "Node.js Website Maintenance Services",
+    description:
+      "Ensure your Node.js applications remain secure, scalable, and high-performing with regular updates, proactive monitoring, bug fixes.",
+    features: [
+ "Node.js & Package Updates",
+  "Performance Optimization",
+  "Security Monitoring & Support"
+    ],
+  },
+
   {
     image: "/services/1.webp",
     title: "Website Maintenance Services",
     description:
-      "Keep your website secure, updated, and performing at its best with proactive maintenance and monitoring.",
+      "Keep your website secure, updated, and performing at its best with proactive maintenance.",
     features: [
       "Regular Website Updates",
       "Security Monitoring",
@@ -25,86 +98,14 @@ export const services = [
     ],
   },
   {
-    image: "/services/3.jpg",
-    title: "WooCommerce Maintenance Services",
-    description:
-      "Maintain and optimize your WooCommerce store for better performance, security, and conversions.",
-    features: [
-      "Store Updates",
-      "Payment Gateway Support",
-      "Performance Optimization",
-    ],
-  },
-  {
-    image: "/services/4.jpg",
-    title: "Shopify Maintenance Services",
-    description:
-      "Professional Shopify maintenance to keep your website secure, fast, and up-to-date.",
-    features: [
-  "Product & Inventory Management",
-  "Store Performance Optimization",
-  "App Updates & Maintenance",
-
-    ],
-  },
-
-   {
-    image: "/services/6.jpg",
-    title: "WordPress maintenance services",
-    description:
-      "Keep your WordPress website secure, updated, and running at peak performance.",
-    features: [
-    "Core, Plugin & Theme Updates",
-  "Security & Backup Management",
-  "Performance Optimization"
-    ],
-  },
-
-  {
     image: "/services/5.jpg",
-    title: "Website Support & Helpdesk Services",
+    title: "Helpdesk Services",
     description:
       "Get reliable technical support and quick issue resolution whenever you need assistance.",
     features: [
       "24/7 Support",
       "Bug Fixes",
       "Technical Assistance",
-    ],
-  },
- 
-   {
-    image: "/services/7.jpg",
-    title: "React Website Maintenance Services",
-    description:
-      "Keep your React website secure, fast, and up-to-date with proactive maintenance, performance monitoring, and ongoing technical support.",
-    features: [
-  "Component & UI Maintenance",
-  "Performance Optimization",
-  "Bug Fixes & Troubleshooting",
-    ],
-  },
-
-   {
-    image: "/services/nodejs.png",
-    title: "Node.js Website Maintenance Services",
-    description:
-      "Ensure your Node.js applications remain secure, scalable, and high-performing with regular updates, proactive monitoring, bug fixes, and ongoing technical support.",
-    features: [
- "Node.js & Package Updates",
-  "Performance Optimization",
-  "Security Monitoring & Support"
-    ],
-  },
-
-   {
-    image: "/services/seo.webp",
-    title: "SEO Maintenance Services",
-    description:
-      "Maintain and improve your website's search engine rankings with ongoing SEO monitoring, content optimization, technical audits, and performance tracking.",
-    features: [
-       "Keyword Ranking Monitoring",
-       "On-Page SEO Optimization",
-       "Monthly SEO Reporting"
     ],
   },
 ];
