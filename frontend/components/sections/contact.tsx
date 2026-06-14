@@ -15,7 +15,7 @@ export function ContactForm() {
     email: "",
     phone: "",
     message: "",
-    form_id:7,
+    form_id: 7,
   });
   const [status, setStatus] = useState<Status>("idle");
   const [feedback, setFeedback] = useState("");
@@ -40,7 +40,7 @@ export function ContactForm() {
       if (response.ok && result?.success) {
         setStatus("success");
         setFeedback("Thanks! Your message has been sent.");
-        setForm({ name: "", email: "", phone: "", message: "",form_id:7 });
+        setForm({ name: "", email: "", phone: "", message: "",form_id: 7});
       } else {
         setStatus("error");
         setFeedback(
@@ -93,7 +93,6 @@ export function ContactForm() {
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
         />
-      <input type="hidden" name="form_id" value="7" />
         <Button type="submit" disabled={status === "loading"}>
           {status === "loading" ? "Sending..." : "Send Message"}
         </Button>
