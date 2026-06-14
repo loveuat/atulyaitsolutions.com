@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const WP_ENDPOINT =
-  "http://localhost/atulyaitsolutions.com/wp-json/atul/v1/contact";
+  "https://aisback.atulyaitsolutions.com/wp-json/ais/v1/lead";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -25,7 +25,7 @@ export function ContactForm() {
     setFeedback("");
 
     try {
-      const response = await fetch(WP_ENDPOINT, {
+      const response = await fetch( "/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
