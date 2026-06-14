@@ -4,35 +4,34 @@ import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react"
 const footerLinks = {
   Company: [
     { label: "About", href: "/about" },
-    { label: "Careers", href: "/careers" },
-    { label: "Press", href: "/press" },
-    { label: "Partners", href: "/partners" },
+    { label: "Our Product", href: "/ourproduct" },
+    { label: "Contact", href: "/contact" },
   ],
   Services: [
-    { label: "How We Hire", href: "/how-we-hire" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "Enterprise", href: "/enterprise" },
-    { label: "For Developers", href: "/for-developers" },
+    { label: "WordPress", href: "/services" },
+    { label: "Shopify", href: "/services" },
+    { label: "WooCommerce", href: "/services" },
+    { label: "SEO", href: "/services" },
   ],
-  Resources: [
-    { label: "Blog", href: "/blog" },
-    { label: "AI Academy", href: "/ai-academy" },
-    { label: "Case Studies", href: "/case-studies" },
-    { label: "Documentation", href: "/docs" },
+  "": [
+    { label: "React", href: "/services" },
+    { label: "Node.js", href: "/services" },
+    { label: "Website", href: "/services" },
+    { label: "Management", href: "/services" },
   ],
-  Legal: [
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" },
-    { label: "Cookie Policy", href: "/cookies" },
-    { label: "GDPR", href: "/gdpr" },
+  "": [
+    { label: "Privacy Policy", href: "/services" },
+    { label: "Terms of Service", href: "/services" },
+    { label: "Cookie Policy", href: "/services" },
+    { label: "GDPR", href: "/services" },
   ],
 }
 
 const socials = [
-  { Icon: Linkedin, href: "#", label: "LinkedIn" },
-  { Icon: Twitter, href: "#", label: "Twitter" },
-  { Icon: Facebook, href: "#", label: "Facebook" },
-  { Icon: Instagram, href: "#", label: "Instagram" },
+  { Icon: Linkedin, href: "https://www.linkedin.com/in/atulya-it-solutions/", label: "LinkedIn" },
+  { Icon: Twitter, href: "https://x.com/aisitsolutions", label: "Twitter" },
+  { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=100071791771830", label: "Facebook" },
+  { Icon: Instagram, href: "https://www.instagram.com/atulyaitsolutions/", label: "Instagram" },
 ]
 
 export function Footer() {
@@ -53,7 +52,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="text-lg font-semibold text-foreground">Atulya IT Solutions</span>
-                <span className="text-[10px] tracking-wide text-muted-foreground">
+                <span className="text-xs text-muted-foreground">
                   Analyze. Architect. Accelerate.
                 </span>
               </div>

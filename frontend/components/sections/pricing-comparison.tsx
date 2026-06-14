@@ -22,23 +22,28 @@ export function PricingComparison() {
         
           
            <div className="bg-card rounded-2xl p-8 border border-border">
-            <div className="text-center mb-8">
+            <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                Starter Plan
+               # Starter Plan
               </h3>
-              <div className="text-4xl font-bold text-foreground">
-                $399 - $499
-                <span className="text-lg font-normal text-muted-foreground">/year</span>
+              <div className="text-4xl font-bold text-gradient-orange">
+                ### $2,500
               </div>
+              <p className="mt-2">*Perfect for small businesses*</p>
             </div>
 
             <ul className="space-y-4">
               {[
-                { text: "Responsive Website Design", included: true },
-                { text: "Up to 5 Pages", included: true },
+                { text: "Up to 10 Pages", included: true },
+                { text: "Custom Design", included: true },
+                { text: "Mobile Responsive", included: true },
+                { text: "Contact Forms", included: true },
                 { text: "Basic SEO Setup", included: true },
-                { text: "Contact Form Integration", included: true },
-                { text: "1 Month Support", included: true },
+                { text: "Speed Optimization", included: true },
+                { text: "Analytics Integration", included: true },
+                { text: "Social Media Integration", included: true },
+                { text: "CMS (if required)", included: true },
+                { text: "30 Days Support", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-500" />
@@ -46,29 +51,63 @@ export function PricingComparison() {
                 </li>
               ))}
             </ul>
+           
+<div className="space-y-3">
+  <p className= "mt-5 inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+    🚀 Technology
+  </p>
+
+  <div className="flex flex-wrap gap-2">
+    <span className="rounded-full border px-3 py-1 text-sm">
+      WordPress
+    </span>
+    <span className="rounded-full border px-3 py-1 text-sm">
+      Next.js
+    </span>
+    <span className="rounded-full border px-3 py-1 text-sm">
+      Laravel
+    </span>
+    <span className="rounded-full border px-3 py-1 text-sm">
+      React
+    </span>
+    <span className="rounded-full border px-3 py-1 text-sm">
+      Static Site
+    </span>
+  </div>
+</div>
               <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
               Get Started
             </Button>
           </div>
 
           <div className="bg-card rounded-2xl p-8 border border-border">
-            <div className="text-center mb-8">
+            <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                Professional Plan
+                # Growth Plan
               </h3>
-              <div className="text-4xl font-bold text-foreground">
-                $899 - $999
-                <span className="text-lg font-normal text-muted-foreground">/year</span>
+              <div className="text-4xl font-bold text-gradient-orange">
+                ### $7,500
               </div>
+            <p className="mt-2">*Perfect for growing businesses*</p>
+            <p className="mt-0">Everything in Starter +</p>
+
             </div>
 
             <ul className="space-y-4">
               {[
-                { text: "Up to 15 Custom Pages", included: true },
-                { text: "Advanced UI/UX Design", included: true },
-                { text: "CMS Integration", included: true },
-                { text: "SEO Optimization", included: true },
-                { text: "3 Month Support", included: true },
+                { text: "Unlimited Pages", included: true },
+                { text: "Blog System", included: true },
+                { text: "User Login/Registration", included: true },
+                { text: "CRM Integration", included: true },
+                { text: "API Integrations", included: true },
+                { text: "Advanced SEO", included: true },
+                { text: "Booking System", included: true },
+                { text: "Dashboard/Admin Panel", included: true },
+                { text: "Performance Optimization", included: true },
+                { text: "Security Hardening", included: true },
+                { text: "90 Days Support", included: true },
+                { text: "24/7 Priority Assistance", included: true },
+                { text: "Custom Feature Enhancements", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-500" />
@@ -87,24 +126,31 @@ export function PricingComparison() {
               Recommended
             </div>
 
-            <div className="text-center mb-8">
+            <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                Enterprise Plan
+                # Business Pro Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                 $799 - $3000
-
-                <span className="text-lg font-normal text-muted-foreground">/year</span>
+                 ### $15,000
               </div>
+              <p className="mt-2">*Perfect for established companies*</p>
+              <p className="mt-2">Everything in Growth +</p>
             </div>
 
             <ul className="space-y-4">
               {[
-                { text: "Custom Web & Mobile Solutions", included: true },
-                { text: "E-Commerce Development", included: true },
-                { text: "API Integrations", included: true },
+                { text: "Custom Business Logic", included: true },
+                { text: "Advanced Dashboard", included: true },
+                { text: "Payment Gateway Integration", included: true },
+                { text: "Membership System", included: true },
+                { text: "Multi-language Support", included: true },
+                { text: "Automation Workflows", included: true },
+                { text: "Email Marketing Integration", included: true },
+                { text: "Advanced Analytics", included: true },
                 { text: "Cloud Deployment", included: true },
-                { text: "Dedicated Project Manager", included: true },
+                { text: "Team Training", included: true },
+                {text: "Advanced Security Setup", included: true },
+                { text: "Scalability Planning", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-500" />
@@ -114,6 +160,85 @@ export function PricingComparison() {
             </ul>
 
             <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
+              Get Started
+            </Button>
+          </div>
+              <div className="bg-card rounded-2xl p-8 border border-border">
+            <div className="text-left mb-8">
+              <h3 className="text-xl font-semibold text-muted-foreground mb-2">
+                # Enterprise Plan
+              </h3>
+              <div className="text-4xl font-bold text-gradient-orange">
+                ### $35,000+
+              </div>
+            <p className="mt-2">*Perfect for large organizations*</p>
+            <p className="mt-0">Everything in Business Pro +</p>
+
+            </div>
+
+            <ul className="space-y-4">
+              {[
+                { text: "SaaS Platform Development", included: true },
+                { text: "Multi-Tenant Architecture", included: true },
+                { text: "AI Integrations", included: true },
+                { text: "Custom APIs", included: true },
+                { text: "Mobile App Backend", included: true },
+                { text: "Enterprise Security", included: true },
+                { text: "Role & Permission System", included: true },
+                { text: "Reporting & Analytics", included: true },
+                { text: "CI/CD Setup", included: true },
+                { text: "Scalability Planning", included: true },
+                { text: "Dedicated Project Manager", included: true },
+                { text: "24/7 Technical Support", included: true },
+                { text: "Dedicated Project Manager", included: true },
+
+
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+              <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
+              Get Started
+            </Button>
+          </div>
+              <div className="bg-card rounded-2xl p-8 border border-border">
+            <div className="text-left mb-8">
+              <h3 className="text-xl font-semibold text-muted-foreground mb-2">
+                # Digital Transformation Plan
+              </h3>
+              <div className="text-4xl font-bold text-gradient-orange">
+                ### $75,000+
+              </div>
+            <p className="mt-2">*Perfect for growing businesses*</p>
+            <p className="mt-0">All Premium Features Included</p>
+            </div>
+
+            <ul className="space-y-4">
+              {[
+                { text: "Website", included: true },
+                { text: "Web Application", included: true },
+                { text: "Mobile Application", included: true },
+                { text: "CRM", included: true },
+                { text: "Customer Portal", included: true },
+                { text: "Admin Dashboard", included: true },
+                { text: "AI Automation", included: true },
+                { text: "SEO", included: true },
+                { text: "AEO", included: true },
+                { text: "GEO", included: true },
+                { text: "Analytics", included: true },
+                { text: "Marketing Integrations", included: true },
+                { text: "Cloud Infrastructure", included: true },
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+              <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
               Get Started
             </Button>
           </div>

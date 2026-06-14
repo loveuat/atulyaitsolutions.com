@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function CTA() {
   return (
@@ -20,13 +21,27 @@ export function CTA() {
             Get matched with top developers in 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group">
-              Start Hiring Today
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg">
-              Schedule a Call
-            </Button>
+            <Button
+    asChild
+    size="lg"
+    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
+  >
+    <Link href="/contact">
+      Start Hiring Today
+      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+    </Link>
+  </Button>
+            
+  <Button
+    asChild
+    size="lg"
+    variant="outline"
+    className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg"
+  >
+    <a href="tel:+918770570764">
+      Schedule a Call
+    </a>
+  </Button>
           </div>
         </div>
       </div>
