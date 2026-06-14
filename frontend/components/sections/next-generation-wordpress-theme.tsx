@@ -17,7 +17,7 @@ export  function NextGenerationTheme() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
-          <span className="px-5 py-2 rounded-full border border-zinc-700 bg-zinc-900">
+          <span className="px-5 py-2 rounded-full border border-border bg-card text-card-foreground">
             Premium WordPress Theme
           </span>
 
@@ -28,7 +28,7 @@ export  function NextGenerationTheme() {
             </span>
           </h1>
 
-          <p className="max-w-3xl mx-auto mt-6 text-xl text-gray-400">
+          <p className="max-w-3xl mx-auto mt-6 text-xl text-muted-foreground">
             Modern, fast and SEO-friendly WordPress theme
             built for agencies, startups and businesses.
           </p>
@@ -44,19 +44,19 @@ export  function NextGenerationTheme() {
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
 
-          <div className="bg-zinc-900 rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center">
             <h3 className="text-5xl font-bold text-orange-500">20+</h3>
             <p className="text-gray-400 mt-2">Homepage Layouts</p>
           </div>
 
-          <div className="bg-zinc-900 rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center">
             <h3 className="text-5xl font-bold text-orange-500">100+</h3>
-            <p className="text-gray-400 mt-2">Custom Blocks</p>
+            <p className="text-muted-foreground mt-2">Custom Blocks</p>
           </div>
 
-          <div className="bg-zinc-900 rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center">
             <h3 className="text-5xl font-bold text-orange-500">1000+</h3>
-            <p className="text-gray-400 mt-2">Happy Customers</p>
+            <p className="text-muted-foreground mt-2">Happy Customers</p>
           </div>
 
         </div>
