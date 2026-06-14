@@ -35,38 +35,6 @@ next.user-config.*
 .DS_Store
 Thumbs.db
 
-# =========================
-# WordPress
-# =========================
-
-# Core
-wp-admin/
-wp-includes/
-
-# Uploads
-wp-content/uploads/
-
-# Cache
-wp-content/cache/
-wp-content/upgrade/
-
-# Backups
-wp-content/ai1wm-backups/
-wp-content/backups/
-
-# Logs
-wp-content/debug.log
-error_log
-
-# Security plugins
-wp-content/wflogs/
-
-# WordPress config
-wp-config.php
-
-# Composer
-#vendor/
-
 # Database Dumps
 *.sql
 *.gz
