@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const roles = [
   "Web Solutions",
@@ -47,35 +48,39 @@ export function Hero() {
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
             Reliable, Scalable, and Efficient Web Design & Coding Services.{" "}
             <span className="text-foreground font-semibold">
-              Save up to 50%
+              Save up to 20%
             </span>{" "}
             and build high-performing Web & Mobile apps.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
-            >
-              Get In Touch
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </div>
+     <Button
+  asChild
+  size="lg"
+  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
+>
+  <Link
+    href="/contact"
+    className="flex items-center gap-2"
+  >
+    Get In Touch
+    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+  </Link>
+</Button>
 
           {/* Trust indicators */}
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span>100% Risk-Free</span>
+              <span>100% Risk Free</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span>Try Before You Buy</span>
+              <span>24/7 support</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span>No Payment Required</span>
+              <span>Cancel anytime</span>
             </div>
           </div>
         </div>
