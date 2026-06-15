@@ -24,10 +24,10 @@ export function PricingComparison() {
            <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-               # Starter Plan
+               Starter Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ### $2,500
+                $2,500
               </div>
               <p className="mt-2">*Perfect for small businesses*</p>
             </div>
@@ -83,10 +83,10 @@ export function PricingComparison() {
           <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                # Growth Plan
+                Growth Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ### $7,500
+                $7,500
               </div>
             <p className="mt-2">*Perfect for growing businesses*</p>
             <p className="mt-0">Everything in Starter +</p>
@@ -128,10 +128,10 @@ export function PricingComparison() {
 
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                # Business Pro Plan
+                Business Pro Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                 ### $15,000
+                 $15,000
               </div>
               <p className="mt-2">*Perfect for established companies*</p>
               <p className="mt-2">Everything in Growth +</p>
@@ -166,10 +166,10 @@ export function PricingComparison() {
               <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                # Enterprise Plan
+                Enterprise Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ### $35,000+
+                $35,000+
               </div>
             <p className="mt-2">*Perfect for large organizations*</p>
             <p className="mt-0">Everything in Business Pro +</p>
@@ -207,10 +207,10 @@ export function PricingComparison() {
               <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                # Digital Transformation Plan
+                Digital Transformation Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ### $75,000+
+                $75,000+
               </div>
             <p className="mt-2">*Perfect for growing businesses*</p>
             <p className="mt-0">All Premium Features Included</p>

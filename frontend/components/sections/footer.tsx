@@ -13,13 +13,13 @@ const footerLinks = {
     { label: "WooCommerce", href: "/services" },
     { label: "SEO", href: "/services" },
   ],
-  "": [
+  hh: [
     { label: "React", href: "/services" },
     { label: "Node.js", href: "/services" },
     { label: "Website", href: "/services" },
     { label: "Management", href: "/services" },
   ],
-  "": [
+  tt: [
     { label: "Privacy Policy", href: "/services" },
     { label: "Terms of Service", href: "/services" },
     { label: "Cookie Policy", href: "/services" },
@@ -76,23 +76,28 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category}>
-              <h4 className="mb-4 font-semibold text-foreground">{category}</h4>
-              <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+{Object.entries(footerLinks).map(([category, links], index) => (
+  <div key={category}>
+    {index < 2 && (
+      <h4 className="mb-4 font-semibold text-foreground">
+        {category}
+      </h4>
+    )}
+
+    <ul className="space-y-3">
+      {links.map((link) => (
+        <li key={link.label}>
+          <Link
+            href={link.href}
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {link.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+))} 
         </div>
 
         {/* Bottom */}
