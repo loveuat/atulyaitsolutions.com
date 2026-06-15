@@ -1,4 +1,4 @@
-export  function NextGenerationTheme() {
+export function NextGenerationTheme() {
   const features = [
     "Elementor Ready",
     "WooCommerce Ready",
@@ -11,17 +11,15 @@ export  function NextGenerationTheme() {
   ];
 
   return (
-    <main className="bg-black text-white">
-
+    <main className="bg-background text-foreground">
       {/* Hero */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
-
-          <span className="px-5 py-2 rounded-full border border-border bg-card text-card-foreground">
+          <span className="px-5 py-2 rounded-full border border-border bg-card text-card-foreground shadow-sm">
             Premium WordPress Theme
           </span>
 
-          <h1 className="mt-8 text-7xl font-black leading-tight">
+          <h1 className="mt-8 text-5xl md:text-7xl font-black leading-tight">
             Next Generation
             <span className="block text-orange-500">
               WordPress Theme
@@ -33,40 +31,42 @@ export  function NextGenerationTheme() {
             built for agencies, startups and businesses.
           </p>
 
-          <button className="mt-10 bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl font-semibold">
+          <button className="mt-10 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition">
             Buy Theme
           </button>
-
         </div>
       </section>
 
-      {/* Demo Stats */}
+      {/* Stats */}
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-
-          <div className="bg-card border border-border rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center shadow-sm">
             <h3 className="text-5xl font-bold text-orange-500">20+</h3>
-            <p className="text-gray-400 mt-2">Homepage Layouts</p>
+            <p className="text-muted-foreground mt-2">
+              Homepage Layouts
+            </p>
           </div>
 
-          <div className="bg-card border border-border rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center shadow-sm">
             <h3 className="text-5xl font-bold text-orange-500">100+</h3>
-            <p className="text-muted-foreground mt-2">Custom Blocks</p>
+            <p className="text-muted-foreground mt-2">
+              Custom Blocks
+            </p>
           </div>
 
-          <div className="bg-card border border-border rounded-3xl p-8 text-center">
+          <div className="bg-card border border-border rounded-3xl p-8 text-center shadow-sm">
             <h3 className="text-5xl font-bold text-orange-500">1000+</h3>
-            <p className="text-muted-foreground mt-2">Happy Customers</p>
+            <p className="text-muted-foreground mt-2">
+              Happy Customers
+            </p>
           </div>
-
         </div>
       </section>
 
       {/* Features */}
-      <section className="py-24 bg-zinc-950">
+      <section className="py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-5xl font-bold text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Theme Features
           </h2>
 
@@ -74,31 +74,30 @@ export  function NextGenerationTheme() {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-orange-500 transition"
+                className="bg-card border border-border rounded-3xl p-8 hover:border-orange-500 hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="text-orange-500 text-4xl mb-4">⚡</div>
+                <div className="text-orange-500 text-4xl mb-4">
+                  ⚡
+                </div>
 
                 <h3 className="font-semibold text-xl mb-3">
                   {item}
                 </h3>
 
-                <p className="text-gray-400">
+                <p className="text-muted-foreground">
                   Premium feature included with theme.
                 </p>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* Pricing */}
       <section className="py-24">
         <div className="max-w-3xl mx-auto px-6">
-
-          <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-3xl p-12 border border-zinc-700">
-
-            <span className="bg-orange-500 px-4 py-2 rounded-full text-sm">
+          <div className="bg-card rounded-3xl p-12 border border-border shadow-lg text-center">
+            <span className="bg-orange-500 text-white px-4 py-2 rounded-full text-sm">
               Best Seller
             </span>
 
@@ -107,23 +106,21 @@ export  function NextGenerationTheme() {
             </h3>
 
             <div className="my-8">
-              <span className="text-7xl font-bold">
+              <span className="text-5xl md:text-7xl font-bold">
                 ₹14,999
               </span>
-              <span className="text-gray-400 text-xl">
-                One Time
-              </span>
+
+              <div className="text-muted-foreground text-lg mt-2">
+                One Time Payment
+              </div>
             </div>
 
-            <button className="w-full bg-orange-500 py-4 rounded-xl font-semibold">
+            <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-semibold transition">
               Purchase Theme
             </button>
-
           </div>
-
         </div>
       </section>
-
     </main>
   );
 }
