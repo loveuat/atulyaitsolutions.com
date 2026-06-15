@@ -10,7 +10,7 @@ import {
   HowItWorks,
   DeveloperCards,
   PricingComparison,
-  Testimonials,
+  TestimonialEmblaSlider,
   CTA,
   Footer,
   ValuesSection,
@@ -59,7 +59,7 @@ export default function Home() {
         <ValuesSection />
         <PortfolioSection />
         <PricingComparison />
-        <Testimonials />
+        <TestimonialEmblaSlider />
         <CTA />
         <Footer />
       </main>
