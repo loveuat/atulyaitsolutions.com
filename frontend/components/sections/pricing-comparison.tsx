@@ -4,20 +4,20 @@ import { Button } from "@/components/ui/button";
 export function PricingComparison() {
   return (
     <section id="pricing" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-primary text-sm uppercase tracking-widest font-medium">
             Pricing
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-            Save Up to 50% on Hiring
+            Save Up to 20% on each Package
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Compare the cost of hiring locally vs. with SmartWorking
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Traditional Hiring max-w-4xl mx-auto */}
         
           
@@ -27,7 +27,7 @@ export function PricingComparison() {
                Starter Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                $2,500
+               ₹25,000 – ₹60,000
               </div>
               <p className="mt-2">*Perfect for small businesses*</p>
             </div>
@@ -193,44 +193,6 @@ export function PricingComparison() {
                 { text: "Dedicated Project Manager", included: true },
 
 
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-foreground">{item.text}</span>
-                </li>
-              ))}
-            </ul>
-              <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
-              Get Started
-            </Button>
-          </div>
-              <div className="bg-card rounded-2xl p-8 border border-border">
-            <div className="text-left mb-8">
-              <h3 className="text-xl font-semibold text-muted-foreground mb-2">
-                Digital Transformation Plan
-              </h3>
-              <div className="text-4xl font-bold text-gradient-orange">
-                $75,000+
-              </div>
-            <p className="mt-2">*Perfect for growing businesses*</p>
-            <p className="mt-0">All Premium Features Included</p>
-            </div>
-
-            <ul className="space-y-4">
-              {[
-                { text: "Website", included: true },
-                { text: "Web Application", included: true },
-                { text: "Mobile Application", included: true },
-                { text: "CRM", included: true },
-                { text: "Customer Portal", included: true },
-                { text: "Admin Dashboard", included: true },
-                { text: "AI Automation", included: true },
-                { text: "SEO", included: true },
-                { text: "AEO", included: true },
-                { text: "GEO", included: true },
-                { text: "Analytics", included: true },
-                { text: "Marketing Integrations", included: true },
-                { text: "Cloud Infrastructure", included: true },
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-500" />
