@@ -2,49 +2,79 @@ import { Star, Shield, Award } from "lucide-react";
 
 export function TrustBadges() {
   return (
-    <section className="py-12 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          {/* Trustpilot */}
-          <div className="flex items-center gap-3 px-6 py-3 bg-card rounded-lg border border-border">
-            <Star className="w-8 h-8 text-green-500 fill-green-500" />
-            <div>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-green-500 fill-green-500" />
-                ))}
-              </div>
-              <span className="text-sm text-muted-foreground">
-                Trustpilot <span className="text-foreground font-semibold">4.7</span>
-              </span>
-            </div>
+  <section className="py-12 bg-secondary/30">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+
+      {/* Google Reviews */}
+      <div className="flex items-center gap-4 px-8 py-4 bg-card rounded-2xl border border-border min-w-[250px]">
+        <div className="text-4xl">G</div>
+
+        <div>
+          <div className="flex items-center gap-1 mb-1">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="w-4 h-4 text-green-500 fill-green-500"
+              />
+            ))}
           </div>
 
-          {/* ISO 27001 */}
-          <div className="flex items-center gap-3 px-6 py-3 bg-card rounded-lg border border-border">
-            <Shield className="w-8 h-8 text-primary" />
-            <div>
-              <span className="text-foreground font-semibold">ISO 27001</span>
-              <p className="text-xs text-muted-foreground">Certified</p>
-            </div>
-          </div>
-
-          {/* Glassdoor */}
-          <div className="flex items-center gap-3 px-6 py-3 bg-card rounded-lg border border-border">
-            <Award className="w-8 h-8 text-green-500" />
-            <div>
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-green-500 fill-green-500" />
-                ))}
-              </div>
-              <span className="text-sm text-muted-foreground">
-                Glassdoor <span className="text-foreground font-semibold">4.9</span>
-              </span>
-            </div>
-          </div>
+          <p className="text-muted-foreground">
+            Google Reviews{" "}
+            <span className="font-bold text-foreground">5.0</span>
+          </p>
         </div>
       </div>
-    </section>
+
+      {/* Clutch */}
+      <div className="flex items-center gap-4 px-8 py-4 bg-card rounded-2xl border border-border min-w-[250px]">
+        <div className="font-bold text-2xl text-foreground">
+          Clutch
+        </div>
+
+        <div>
+          <div className="flex items-center gap-1 mb-1">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="w-4 h-4 text-green-500 fill-green-500"
+              />
+            ))}
+          </div>
+
+          <p className="text-muted-foreground">
+            Clutch{" "}
+            <span className="font-bold text-foreground">5.0</span>
+          </p>
+        </div>
+      </div>
+
+      {/* GoodFirms */}
+      <div className="flex items-center gap-4 px-8 py-4 bg-card rounded-2xl border border-border min-w-[250px]">
+        <div className="font-bold text-xl text-foreground">
+          GoodFirms
+        </div>
+
+        <div>
+          <div className="flex items-center gap-1 mb-1">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="w-4 h-4 text-green-500 fill-green-500"
+              />
+            ))}
+          </div>
+
+          <p className="text-muted-foreground">
+            GoodFirms{" "}
+            <span className="font-bold text-foreground">5.0</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   );
 }
