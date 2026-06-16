@@ -7,7 +7,3 @@ Host: https://atulyaitsolutions.com/
 
 # Sitemaps
 Sitemap: https://atulyaitsolutions.com/sitemap.xml
-
-LLM: https://atulyaitsolutions.com/llms.txt
-
-LLMS-FULL: https://atulyaitsolutions.com/llms-full.txt
