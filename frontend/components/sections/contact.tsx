@@ -15,8 +15,12 @@ export function ContactForm() {
     email: "",
     phone: "",
     message: "",
+    service: "",
+    order_timeframe: "",
+    order_referer: "",
     form_id: 7,
   });
+  const [file, setFile] = useState<File | null>(null);
   const [status, setStatus] = useState<Status>("idle");
   const [feedback, setFeedback] = useState("");
 
@@ -40,7 +44,7 @@ export function ContactForm() {
       if (response.ok && result?.success) {
         setStatus("success");
         setFeedback("Thanks! Your message has been sent.");
-        setForm({ name: "", email: "", phone: "", message: "",form_id: 7});
+        setForm({ name: "", email: "", phone: "", message: "",service: "",order_timeframe: "",order_referer:"",form_id: 7});
       } else {
         setStatus("error");
         setFeedback(
@@ -55,44 +59,342 @@ export function ContactForm() {
   };
 
   return (
+    <>
     <div className="w-full max-w-3xl mx-auto px-4">
       <h2 className="pb-3 text-center text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
         Reach Out Today
       </h2>
       <form onSubmit={handleSubmit} className="space-y-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Input
-            id="name"
-            placeholder="Full Name"
-            required
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+          <div className="relative">
+  <label
+    htmlFor="name"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Full Name <span className="text-red-500">*</span>
+  </label>
 
-          <Input
-            id="email"
-            type="email"
-            placeholder="Email Address"
-            required
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
-          />
+  <Input
+    id="name"
+    value={form.name}
+    onChange={(e) => setForm({ ...form, name: e.target.value })}
+    className="h-16 px-4"
+  />
+</div>
+
+         <div className="relative">
+  <label
+    htmlFor="email"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Email Address <span className="text-red-500">*</span>
+  </label>
+
+  <Input
+    id="email"
+    type="email"
+    value={form.email}
+    onChange={(e) => setForm({ ...form, email: e.target.value })}
+    className="h-16 px-4"
+  />
+</div>
         </div>
 
-        <Input
-          id="phone"
-          placeholder="Phone"
-          value={form.phone}
-          onChange={(e) => setForm({ ...form, phone: e.target.value })}
-        />
+       <div className="relative mb-10">
+  <label
+    htmlFor="service"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Choose Services <span className="text-red-500">*</span>
+  </label>
 
-        <Textarea
-          id="message"
-          placeholder="Tell us about your project..."
-          rows={5}
-          value={form.message}
-          onChange={(e) => setForm({ ...form, message: e.target.value })}
-        />
+  <select
+    id="service"
+    required
+    value={form.service}
+    onChange={(e) =>
+      setForm({ ...form, service: e.target.value })
+    }
+    className="
+      w-full
+      h-16
+      rounded-lg
+      border
+      border-border
+      bg-background
+      px-4
+      text-base
+      text-foreground
+      focus:outline-none
+      focus:ring-2
+      focus:ring-primary/20
+      focus:border-primary
+    "
+  >
+    <option value="">
+      Select Choose Services
+    </option>
+
+    <option value="website-development">
+      Website Development
+    </option>
+
+    <option value="wordpress-development">
+      WordPress Development
+    </option>
+
+    <option value="nextjs-development">
+      Next.js Development
+    </option>
+
+    <option value="seo">
+      SEO Services
+    </option>
+
+    <option value="ecommerce">
+      eCommerce Development
+    </option>
+
+    <option value="ai">
+      AI Automation
+    </option>
+
+    <option value="other">
+      Other
+    </option>
+  </select>
+</div>
+        <div className="relative">
+  <label
+    htmlFor="message"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Tell Us About Your Project
+  </label>
+
+  <Textarea
+    id="message"
+    rows={12}
+    value={form.message}
+    onChange={(e) => setForm({ ...form, message: e.target.value })}
+    className="pt-6 h-40 px-4 resize-none"
+  />
+</div>
+<div className="relative">
+  <label
+    htmlFor="file"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Project Brief
+  </label>
+
+  <input
+    type="file"
+    id="file"
+    className="
+      h-16
+      w-full
+      rounded-md
+      border
+      border-input
+      bg-background
+      px-4
+      py-4
+      text-sm
+      file:border-0
+      file:bg-transparent
+      file:text-sm
+      file:font-medium
+    "
+  />
+</div>
+ <div className="relative mb-10">
+  <label
+    htmlFor="order_timeframe"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+    Project Time Frame <span className="text-red-500">*</span>
+  </label>
+
+  <select
+    id="order_timeframe"
+    required
+    value={form.order_timeframe}
+    onChange={(e) =>
+      setForm({ ...form, order_timeframe: e.target.value })
+    }
+    className="
+      w-full
+      h-16
+      rounded-lg
+      border
+      border-border
+      bg-background
+      px-4
+      text-base
+      text-foreground
+      focus:outline-none
+      focus:ring-2
+      focus:ring-primary/20
+      focus:border-primary
+    "
+  >
+    <option value="">
+      How time sensitive is your project?
+    </option>
+
+    <option value="asap">
+     I need it ASAP
+    </option>
+
+    <option value="i=am-not-in-rush">
+      I’m not in a rush
+    </option>
+  </select>
+</div>
+ <div className="relative mb-10">
+  <label
+    htmlFor="order_referer"
+    className="
+      absolute
+      -top-2.5
+      left-3
+      bg-background
+      px-1
+      text-xs
+      font-medium
+      text-muted-foreground
+      z-10
+    "
+  >
+   Referrer <span className="text-red-500">*</span>
+  </label>
+
+  <select
+    id="order_referer"
+    required
+    value={form.order_referer}
+    onChange={(e) =>
+      setForm({ ...form, order_referer: e.target.value })
+    }
+    className="w-full h-16 rounded-lg border border-border bg-background px-4 text-base text-foreground focus:outline-none focus:ring-2
+focus:ring-primary/20 focus:border-primary ">
+    <option value="">
+      How did you hear about us?
+    </option>
+
+    <option value="Paid Advertising">
+     Paid Advertising
+    </option>
+
+    <option value="Organic Search">
+      Organic Search
+    </option>
+    <option value="Returning Customer">
+      Returning Customer
+    </option>
+    <option value="Referral">
+      Referral
+    </option>
+    <option value="Other">
+      Other
+    </option>
+    
+  </select>
+</div>
+<div className="flex items-start gap-3">
+  <input
+    type="checkbox"
+    id="consent"
+    required
+    className="mt-1 h-4 w-4"
+  />
+
+  <label
+    htmlFor="consent"
+    className="text-sm text-muted-foreground leading-relaxed"
+  >
+    I agree to be contacted by Atulya IT Solutions regarding my
+    inquiry. I understand that my information will be used solely
+    for communication purposes and will not be shared with third
+    parties.
+  </label>
+</div>
+<div className="flex items-start gap-3">
+  <input
+    type="checkbox"
+    id="consent"
+    required
+    className="mt-1 h-4 w-4"
+  />
+
+  <label
+    htmlFor="consent"
+    className="text-sm text-muted-foreground leading-relaxed"
+  >
+    I want to receive news and service updates from Atulya IT Solutions.
+  </label>
+</div>
         <Button type="submit" disabled={status === "loading"}>
           {status === "loading" ? "Sending..." : "Send Message"}
         </Button>
@@ -111,5 +413,6 @@ export function ContactForm() {
         )}
       </form>
     </div>
+    </>
   );
 }
