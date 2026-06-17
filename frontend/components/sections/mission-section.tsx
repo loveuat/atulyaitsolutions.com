@@ -1,5 +1,4 @@
 import { Quote } from "lucide-react";
-
 export function MissionSection() {
   return (
     <section className="py-20 px-4">
@@ -19,15 +18,13 @@ export function MissionSection() {
             </h3>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Bridging Talent and Opportunity: We aim to revolutionise the tech hiring process 
-              by providing access to top-tier, vetted global developers and engineering teams, 
-              saving our clients time and money while offering unparalleled opportunities to 
-              tech professionals.
-            </p>
+  We partner with startups, businesses, and enterprises to build future-ready digital solutions. From modern websites and eCommerce platforms to AI-powered applications and automation systems, our team delivers technology that drives innovation and measurable results.
+</p>
 
-            <p className="mt-6 text-primary font-semibold italic">
-              From what we hear, we&apos;re pretty good at it...
-            </p>
+<p className="mt-6 text-primary font-semibold italic">
+  Building technology that powers business success.
+</p>
+
           </div>
 
           {/* Decorative Elements */}

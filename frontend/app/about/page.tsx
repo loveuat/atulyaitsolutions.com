@@ -9,9 +9,8 @@ import {
   MissionSection,
   TimelineSection,
   DeveloperCards,
-  Testimonials,
+  TestimonialEmblaSlider,
 } from "@/components/sections";
-
 
 export const metadata: Metadata = {
   title: "About Us | IT Solutions & Software Development Company",
@@ -28,7 +27,7 @@ export default function AboutPage() {
       <MissionSection />
       <TimelineSection />
       <DeveloperCards />
-      <Testimonials />
+      <TestimonialEmblaSlider />
       <CTA />
       <Footer />
     </main>

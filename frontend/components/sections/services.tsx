@@ -4,32 +4,32 @@ import Image from "next/image";
 export const services = [
    {
     image: "/services/6.jpg",
-    title: "WordPress maintenance services",
+    title: "WordPress Developer",
     description:
-      "Keep your WordPress website secure, updated, and running at peak performance.",
+"Build custom, high-performance WordPress websites tailored to your business needs with scalable and SEO-friendly solutions.",
     features: [
-    "Core, Plugin & Theme Updates",
-  "Security & Backup Management",
-  "Performance Optimization"
+    "Custom Theme Development",
+  "Plugin Development & Integration",
+  "WooCommerce Development"
     ],
   },
 
 {
-    image: "/services/4.jpg",
-    title: "Shopify App Maintenance Services",
-    description:
-      "Professional Shopify maintenance to keep your website secure, fast, and up-to-date.",
-    features: [
-  "Product & Inventory Management",
-  "Store Performance Optimization",
-  "App Updates & Maintenance",
+image: "/services/4.jpg",
+title: "Shopify Developer",
+description:
+"Create powerful eCommerce experiences with custom Shopify development, performance optimization, and scalable store solutions.",
+features: [
+"Custom Shopify Development",
+"Payment & Shipping Integration",
+"Conversion Rate Optimization"
+],
+},
 
-    ],
-  },
 
    {
     image: "/services/3.jpg",
-    title: "WooCommerce Maintenance Services",
+    title: "WooCommerce Developer",
     description:
       "Maintain and optimize your WooCommerce store for better performance, security, and conversions.",
     features: [
@@ -39,41 +39,41 @@ export const services = [
     ],
   },
 
-  {
-    image: "/services/seo.webp",
-    title: "SEO Maintenance Services",
-    description:
-      "Maintain and improve your website's search engine rankings with ongoing SEO monitoring, content optimization, technical audits, and performance tracking.",
-    features: [
-       "Keyword Ranking Monitoring",
-       "On-Page SEO Optimization",
-       "Monthly SEO Reporting"
-    ],
-  },
+{
+image: "/services/seo.webp",
+title: "SEO Services",
+description:
+"Improve search rankings, attract qualified leads, and grow your business with comprehensive SEO solutions tailored to your industry and goals.",
+features: [
+"Technical SEO Audits",
+"Content Optimization",
+"SEO Analytics & Reporting"
+],
+},
 
-  {
-    image: "/services/7.jpg",
-    title: "React Website Maintenance Services",
-    description:
-      "Keep your React website secure, fast, and up-to-date with proactive maintenance, performance monitoring, and ongoing technical support.",
-    features: [
-  "Component & UI Maintenance",
-  "Performance Optimization",
-  "Bug Fixes & Troubleshooting",
-    ],
-  },
+{
+image: "/services/7.jpg",
+title: "React Developer",
+description:
+"Create modern, dynamic, and user-friendly web applications using React, delivering exceptional performance and seamless user experiences.",
+features: [
+"React Application Development",
+"Interactive UI/UX Implementation",
+"Third-Party API Integrations"
+],
+},
 
-   {
-    image: "/services/nodejs.png",
-    title: "Node.js Website Maintenance Services",
-    description:
-      "Ensure your Node.js applications remain secure, scalable, and high-performing with regular updates, proactive monitoring, bug fixes.",
-    features: [
- "Node.js & Package Updates",
-  "Performance Optimization",
-  "Security Monitoring & Support"
-    ],
-  },
+{
+image: "/services/nodejs.png",
+title: "Node.js Developer",
+description:
+"Develop fast, secure, and scalable server-side applications using Node.js, enabling seamless performance and business growth.",
+features: [
+"REST API & Microservices",
+"Third-Party Integrations",
+"Performance Optimization"
+],
+},
 
   {
     image: "/services/1.webp",

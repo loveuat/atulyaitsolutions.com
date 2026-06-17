@@ -13,7 +13,7 @@ export function PricingComparison() {
             Save Up to 20% on each Package
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Compare the cost of hiring locally vs. with SmartWorking
+          Affordable, transparent pricing designed for startups, growing businesses, and enterprises. Choose the package that fits your goals and budget.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export function PricingComparison() {
                Starter Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-               ₹25,000 – ₹60,000
+               ₹25k - ₹50k
               </div>
               <p className="mt-2">*Perfect for small businesses*</p>
             </div>
@@ -86,7 +86,7 @@ export function PricingComparison() {
                 Growth Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                $7,500
+                ₹50k - ₹1.5L
               </div>
             <p className="mt-2">*Perfect for growing businesses*</p>
             <p className="mt-0">Everything in Starter +</p>
@@ -121,55 +121,14 @@ export function PricingComparison() {
           </div>
 
           {/* SmartWorking */}
-          <div className="bg-card rounded-2xl p-8 border-2 border-primary relative glow-orange">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
-              Recommended
-            </div>
-
-            <div className="text-left mb-8">
-              <h3 className="text-xl font-semibold text-foreground mb-2">
-                Business Pro Plan
-              </h3>
-              <div className="text-4xl font-bold text-gradient-orange">
-                 $15,000
-              </div>
-              <p className="mt-2">*Perfect for established companies*</p>
-              <p className="mt-2">Everything in Growth +</p>
-            </div>
-
-            <ul className="space-y-4">
-              {[
-                { text: "Custom Business Logic", included: true },
-                { text: "Advanced Dashboard", included: true },
-                { text: "Payment Gateway Integration", included: true },
-                { text: "Membership System", included: true },
-                { text: "Multi-language Support", included: true },
-                { text: "Automation Workflows", included: true },
-                { text: "Email Marketing Integration", included: true },
-                { text: "Advanced Analytics", included: true },
-                { text: "Cloud Deployment", included: true },
-                { text: "Team Training", included: true },
-                {text: "Advanced Security Setup", included: true },
-                { text: "Scalability Planning", included: true },
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-foreground">{item.text}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
-              Get Started
-            </Button>
-          </div>
-              <div className="bg-card rounded-2xl p-8 border border-border">
+        
+            <div className="bg-card rounded-2xl p-8 border border-border">
             <div className="text-left mb-8">
               <h3 className="text-xl font-semibold text-muted-foreground mb-2">
                 Enterprise Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                $35,000+
+                ₹1.5L+
               </div>
             <p className="mt-2">*Perfect for large organizations*</p>
             <p className="mt-0">Everything in Business Pro +</p>
@@ -201,6 +160,50 @@ export function PricingComparison() {
               ))}
             </ul>
               <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
+              Get Started
+            </Button>
+          </div>
+            <div className="bg-card rounded-2xl p-8 border-2 border-primary relative glow-orange">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+              Recommended
+            </div>
+
+            <div className="text-left mb-8">
+              <h3 className="text-xl font-semibold text-foreground mb-2">
+                AI & Automation
+              </h3>
+              <div className="text-4xl font-bold text-gradient-orange">
+                 ₹2L+
+              </div>
+              <p className="mt-2">*Perfect for established companies*</p>
+              <p className="mt-2">Everything in Growth +</p>
+            </div>
+
+            <ul className="space-y-4">
+              {[
+             { text: "AI Agent Development", included: true },
+{ text: "Custom GPT / AI Assistant", included: true },
+{ text: "Multi-Agent AI Systems", included: true },
+{ text: "RAG Knowledge Base Integration", included: true },
+{ text: "AI Chatbot for Website & WhatsApp", included: true },
+{ text: "Workflow Automation", included: true },
+{ text: "Predictive Analytics", included: true },
+{ text: "Intelligent Document Processing", included: true },
+{ text: "CRM & ERP AI Integration", included: true },
+{ text: "Voice AI Integration", included: true },
+{ text: "Advanced Reporting Dashboard", included: true },
+{ text: "Cloud Infrastructure Setup", included: true },
+{ text: "Enterprise Security & Compliance", included: true },
+
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-foreground">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Button className="w-full mt-8 bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
               Get Started
             </Button>
           </div>

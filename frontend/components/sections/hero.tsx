@@ -46,11 +46,11 @@ export function Hero() {
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-            Reliable, Scalable, and Efficient Web Design & Coding Services.{" "}
+            Modern Websites Engineered for Speed, Security & Scalability.{" "}
             <span className="text-foreground font-semibold">
               Save up to 20%
             </span>{" "}
-            and build high-performing Web & Mobile apps.
+            and create secure, user friendly Web & Mobile Experiences.
           </p>
 
           {/* CTA Buttons */}
@@ -72,7 +72,7 @@ export function Hero() {
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span>100% Risk Free</span>
+              <span>100% Full Time Experts</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
@@ -80,7 +80,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full" />
-              <span>Cancel anytime</span>
+              <span>2,000 + Websites Built</span>
             </div>
           </div>
         </div>

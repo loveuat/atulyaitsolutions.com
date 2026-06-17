@@ -24,7 +24,7 @@ const developers = [
     experience: "10+ years",
     location: "Hyderabad, India",
     skills: ["Client acquisitio", "Lead generation", "Market research","Develop growth strategies"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+    image: "/team/Atul.jpeg",
   },
   {
     name: "Alisa Gupta",
