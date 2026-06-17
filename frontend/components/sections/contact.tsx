@@ -14,7 +14,6 @@ export function ContactForm() {
     name: "",
     email: "",
     phone: "",
-    service: "",
     message: "",
     service: "",
     order_timeframe: "",
@@ -45,11 +44,7 @@ export function ContactForm() {
       if (response.ok && result?.success) {
         setStatus("success");
         setFeedback("Thanks! Your message has been sent.");
-<<<<<<< Updated upstream
         setForm({ name: "", email: "", phone: "", message: "",service: "",order_timeframe: "",order_referer:"",form_id: 7});
-=======
-        setForm({ name: "", email: "", phone: "", service: "", message: "", form_id: 7});
->>>>>>> Stashed changes
       } else {
         setStatus("error");
         setFeedback(
@@ -124,7 +119,6 @@ export function ContactForm() {
   />
 </div>
         </div>
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
        <div className="relative mb-10">
   <label
@@ -144,7 +138,6 @@ export function ContactForm() {
     Choose Services <span className="text-red-500">*</span>
   </label>
 
-<<<<<<< Updated upstream
   <select
     id="service"
     required
@@ -402,32 +395,6 @@ focus:ring-primary/20 focus:border-primary ">
     I want to receive news and service updates from Atulya IT Solutions.
   </label>
 </div>
-=======
-<select
-  id="service"
-  required
-  value={form.service}
-  onChange={(e) => setForm({ ...form, service: e.target.value })}
-  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground
-  focus:outline-none focus:ring-0 focus:border-input"
->
-  <option value="">Select Our Service</option>
-  <option value="React Developer">React Developer</option>
-  <option value="Node.js Developer">Node.js Developer</option>
-  <option value="WordPress Developer">WordPress Developer</option>
-  <option value="Shopify Developer">Shopify Developer</option>
-  <option value="SEO Services">SEO Services</option>
-</select>
-</div>
-
-        <Textarea
-          id="message"
-          placeholder="Tell us about your project..."
-          rows={5}
-          value={form.message}
-          onChange={(e) => setForm({ ...form, message: e.target.value })}
-        />
->>>>>>> Stashed changes
         <Button type="submit" disabled={status === "loading"}>
           {status === "loading" ? "Sending..." : "Send Message"}
         </Button>
