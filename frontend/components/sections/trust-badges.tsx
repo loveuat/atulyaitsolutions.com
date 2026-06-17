@@ -24,6 +24,10 @@ export function TrustBadges() {
             Google Reviews{" "}
             <span className="font-bold text-foreground">5.0</span>
           </p>
+           <p className="text-muted-foreground">
+            Total Reviews Count{" "}
+            <span className="font-bold text-foreground">2</span>
+          </p>
         </div>
       </div>
 

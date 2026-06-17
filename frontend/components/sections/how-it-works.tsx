@@ -65,7 +65,7 @@ export function HowItWorks() {
             Simple 6-Step Process
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From matching to ongoing support, we handle everything so you can focus on building.
+Our streamlined process takes you from idea to launch with expert guidance, transparent communication, and continuous support at every stage.
           </p>
         </div>
 

@@ -14,11 +14,10 @@ export function CTA() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             Ready to Build Your{" "}
-            <span className="text-gradient-orange">Dream Team?</span>
+            <span className="text-gradient-orange">Dream App?</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8 text-pretty">
-            Join 500+ companies that trust SmartWorking for their remote hiring needs.
-            Get matched with top developers in 48 hours.
+            Whether you need a dedicated WordPress developer, a full-stack development, or ongoing website maintenance, we help you find the right talent to bring your ideas to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -27,7 +26,7 @@ export function CTA() {
     className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
   >
     <Link href="/contact">
-      Start Hiring Today
+      Contact Us
       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
     </Link>
   </Button>
@@ -38,9 +37,9 @@ export function CTA() {
     variant="outline"
     className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg"
   >
-    <a href="tel:+918770570764">
-      Schedule a Call
-    </a>
+ <a href="tel:+918770570764">
+  Schedule a Call
+</a>
   </Button>
           </div>
         </div>
