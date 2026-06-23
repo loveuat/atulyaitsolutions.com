@@ -22,9 +22,6 @@ export function Navbar() {
 
   return (
     <>
-    <div className="fixed top-20 left-0 bg-red-500 text-white p-2 z-50">
-  {locale}
-</div>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
