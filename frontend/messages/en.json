@@ -1,9 +1,70 @@
 {
   "Home": {
     "title": "Next.js Development Company",
-    "subtitle": "Modern websites built with Next.js and Headless WordPress."
+    "subtitle": "Modern websites built with Next.js and Headless WordPress.",
+    "heading": "We Build Reliable, Scalable & Future-Ready",
+    "subheading": "Modern Websites Engineered for Speed, Security & Scalability. Save up to 20% and create secure, user-friendly Web & Mobile Experiences.",
+    "cta": "Get In Touch",
+    "trust1": "100% Full Time Experts",
+    "trust2": "24/7 Support",
+    "trust3": "2,000+ Websites Built",
+    "roles": {
+      "webSolutions": "Web Solutions",
+      "digitalPlatforms": "Digital Platforms",
+      "scalableProducts": "Scalable Products",
+      "customSystems": "Custom Systems",
+      "enterpriseWebsites": "Enterprise Websites",
+      "modernApplications": "Modern Applications"
+    }
   },
-   "Navbar": {
-    "letsChat": "Let's Chat"
+
+  "Navbar": {
+    "aboutUs": "About Us",
+    "ourProducts": "Our Products",
+    "ourServices": "Our Services",
+    "contact": "Contact",
+    "letsChat": "Let's Chat",
+    "contactUs": "Contact Us",
+    "whatsappTitle": "Atulya IT Solutions",
+    "whatsappReply": "Typically replies within minutes",
+    "whatsappMessage": "👋 Hi there! Need help with WordPress, Next.js, SEO, AI Solutions or a new project?",
+    "whatsappButton": "Start WhatsApp Chat"
+  },
+
+  "Services": {
+    "heading": "Our",
+    "headingHighlight": "Services",
+
+    "wordpress": {
+      "title": "WordPress Developer",
+      "description": "Build custom, high-performance WordPress websites tailored to your business needs.",
+      "feature1": "Custom Theme Development",
+      "feature2": "Plugin Development & Integration",
+      "feature3": "WooCommerce Development"
+    },
+
+    "shopify": {
+      "title": "Shopify Developer",
+      "description": "Create powerful eCommerce experiences with custom Shopify development.",
+      "feature1": "Custom Shopify Development",
+      "feature2": "Payment & Shipping Integration",
+      "feature3": "Conversion Rate Optimization"
+    },
+
+    "woocommerce": {
+      "title": "WooCommerce Developer",
+      "description": "Maintain and optimize your WooCommerce store.",
+      "feature1": "Store Updates",
+      "feature2": "Payment Gateway Support",
+      "feature3": "Performance Optimization"
+    },
+  
+  "CTA": {
+    "title": "Ready to Build Your",
+    "highlight": "Dream App?",
+    "description": "Whether you need a dedicated WordPress developer, full-stack development, or ongoing website maintenance, we help you find the right talent to bring your ideas to life.",
+    "contactButton": "Contact Us",
+    "callButton": "Schedule a Call"
+  }
   }
 }
