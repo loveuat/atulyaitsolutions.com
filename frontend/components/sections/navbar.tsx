@@ -5,7 +5,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 
 const navLinks = [
   { name: "About Us", href: "/about" },
@@ -17,6 +17,7 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showWhatsapp, setShowWhatsapp] = useState(false);
+  const locale = useLocale();
   const navt = useTranslations("Navbar");
 
   return (
@@ -51,7 +52,7 @@ export function Navbar() {
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
-                  href={link.href}
+                  href={`/${locale}${link.href}`}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide uppercase"
                 >
                   {link.name}
