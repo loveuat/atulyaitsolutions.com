@@ -5,6 +5,9 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {useTranslations} from 'next-intl';
+import {useLocale} from 'next-intl';
+
 
 const navLinks = [
   { name: "About Us", href: "/about" },
@@ -16,8 +19,13 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showWhatsapp, setShowWhatsapp] = useState(false);
+  const navt = useTranslations("Navbar");
+  const locale = useLocale();
+
+console.log(locale);
 
   return (
+    
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-4">
@@ -65,7 +73,7 @@ export function Navbar() {
                 onClick={() => setShowWhatsapp(true)}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                Let’s Chat
+               {navt('letsChat')}
               </Button>
             </div>
 
