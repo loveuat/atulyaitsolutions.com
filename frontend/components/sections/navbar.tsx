@@ -22,12 +22,15 @@ export function Navbar() {
 
   return (
     <>
+    <div className="fixed top-20 left-0 bg-red-500 text-white p-2 z-50">
+  {locale}
+</div>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <Link href={`/${locale}`} className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-border bg-black dark:bg-white transition-colors">
                 <img
                   src="/aislogo.webp"
@@ -91,7 +94,7 @@ export function Navbar() {
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
-                  href={link.href}
+                  href={`/${locale}${link.href}`}
                   className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
