@@ -1,3 +1,5 @@
+import {useTranslations} from 'next-intl';
+
 import { Metadata } from "next";
 import Script from "next/script";
 

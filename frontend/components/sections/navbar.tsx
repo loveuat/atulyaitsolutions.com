@@ -5,6 +5,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {useTranslations} from 'next-intl';
 
 const navLinks = [
   { name: "About Us", href: "/about" },
@@ -16,6 +17,7 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showWhatsapp, setShowWhatsapp] = useState(false);
+  const navt = useTranslations("Navbar");
 
   return (
     <>
@@ -65,7 +67,7 @@ export function Navbar() {
                 onClick={() => setShowWhatsapp(true)}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                Let’s Chat
+               {navt('letsChat')}
               </Button>
             </div>
 
