@@ -16,7 +16,6 @@
     }
   },
 
- 
   "Navbar": {
     "aboutUs": "À propos",
     "ourProducts": "Nos Produits",
@@ -104,18 +103,14 @@
       "feature1": "Support 24h/24 et 7j/7",
       "feature2": "Correction des bugs",
       "feature3": "Assistance technique"
-    },
+    }
+  },
 
-      "CTA": {
+  "CTA": {
     "title": "Prêt à créer votre",
     "highlight": "application de rêve ?",
     "description": "Que vous ayez besoin d’un développeur WordPress dédié, d’un développement full-stack ou d’une maintenance continue, nous vous aidons à concrétiser vos idées.",
     "contactButton": "Contactez-nous",
     "callButton": "Planifier un appel"
   }
-
-  }
 }
-
-
-

@@ -1,9 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+
+import { Button } from "@/components/ui/button";
 
 export function CTA() {
   const t = useTranslations("CTA");
@@ -11,35 +12,35 @@ export function CTA() {
   return (
     <section
       id="contact"
-      className="py-20 bg-background relative overflow-hidden"
+      className="relative overflow-hidden bg-background py-20"
     >
-      {/* Background glow */}
+      {/* Background Glow */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[800px] h-[400px] bg-primary/20 rounded-full blur-[150px]" />
+        <div className="h-[400px] w-[800px] rounded-full bg-primary/20 blur-[150px]" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-6 text-balance text-3xl font-bold text-foreground md:text-5xl">
             {t("title")}{" "}
             <span className="text-gradient-orange">
               {t("highlight")}
             </span>
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-8 text-pretty">
+          <p className="mb-8 text-lg text-muted-foreground text-pretty">
             {t("description")}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg group"
+              className="group bg-primary px-8 py-6 text-lg text-primary-foreground hover:bg-primary/90"
             >
               <Link href="/contact">
                 {t("contactButton")}
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
 
@@ -47,7 +48,7 @@ export function CTA() {
               asChild
               size="lg"
               variant="outline"
-              className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg"
+              className="border-border px-8 py-6 text-lg text-foreground hover:bg-secondary"
             >
               <a href="tel:+918770570764">
                 {t("callButton")}
@@ -59,5 +60,3 @@ export function CTA() {
     </section>
   );
 }
-
-

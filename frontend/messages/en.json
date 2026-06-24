@@ -1,3 +1,4 @@
+
 {
   "Home": {
     "title": "Next.js Development Company",
@@ -58,13 +59,53 @@
       "feature2": "Payment Gateway Support",
       "feature3": "Performance Optimization"
     },
-  
+
+    "seo": {
+      "title": "SEO Services",
+      "description": "Improve your search engine rankings and grow your business with data-driven SEO strategies.",
+      "feature1": "Technical SEO Audits",
+      "feature2": "On-Page Content Optimization",
+      "feature3": "SEO Analytics & Reporting"
+    },
+
+    "react": {
+      "title": "React Developer",
+      "description": "Build modern, fast, and interactive web applications with React.",
+      "feature1": "Custom React Application Development",
+      "feature2": "Interactive User Interfaces",
+      "feature3": "Third-Party API Integrations"
+    },
+
+    "nodejs": {
+      "title": "Node.js Developer",
+      "description": "Develop secure, scalable, and high-performance backend applications with Node.js.",
+      "feature1": "REST API & Microservices Development",
+      "feature2": "Third-Party Integrations",
+      "feature3": "Performance Optimization"
+    },
+
+    "maintenance": {
+      "title": "Website Maintenance Services",
+      "description": "Keep your website secure, updated, and performing at its best with proactive maintenance.",
+      "feature1": "Regular Updates & Backups",
+      "feature2": "Security Monitoring",
+      "feature3": "Performance Optimization"
+    },
+
+    "helpdesk": {
+      "title": "Helpdesk Services",
+      "description": "Get reliable technical support and quick issue resolution whenever you need it.",
+      "feature1": "24/7 Technical Support",
+      "feature2": "Bug Fixes & Troubleshooting",
+      "feature3": "Dedicated Assistance"
+    }
+  },
+
   "CTA": {
     "title": "Ready to Build Your",
     "highlight": "Dream App?",
     "description": "Whether you need a dedicated WordPress developer, full-stack development, or ongoing website maintenance, we help you find the right talent to bring your ideas to life.",
     "contactButton": "Contact Us",
     "callButton": "Schedule a Call"
-  }
   }
 }
