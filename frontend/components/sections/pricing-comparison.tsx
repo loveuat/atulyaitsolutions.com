@@ -1,7 +1,47 @@
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { headers } from "next/headers";
+export async function PricingComparison() {
+  const headersList = await headers();
+  const country = headersList.get("x-vercel-ip-country") || "IN";
+const pricingMap: Record<
+  string,
+  {
+    currency: string;
+    starter: string;
+    growth: string;
+    enterprise:string;
+    automation:string
+  }
+> = {
+  // Asia
+  IN: { currency: "INR", starter: "₹15k - ₹50k", growth: "₹50k - ₹1L+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  AE: { currency: "AED", starter: "AED 2,500+", growth: "AED 5,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  SG: { currency: "SGD", starter: "S$700+", growth: "S$1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  JP: { currency: "JPY", starter: "¥80,000+", growth: "¥150,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
 
-export function PricingComparison() {
+  // Europe
+  FR: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  DE: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  IT: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  ES: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  NL: { currency: "EUR", starter: "€800+", growth: "€2,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  BE: { currency: "EUR", starter: "€700+", growth: "€1,500+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+
+  // English-speaking markets
+  US: { currency: "USD", starter: "$500 - $1000", growth: "$1000 - $3000" , enterprise: "$3000+", automation: "$5000+"},
+  CA: { currency: "CAD", starter: "CA$1,200+", growth: "CA$3,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  GB: { currency: "GBP", starter: "£800+", growth: "£2,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  AU: { currency: "AUD", starter: "A$1,500+", growth: "A$3,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  NZ: { currency: "NZD", starter: "NZ$1,500+", growth: "NZ$3,500+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+
+  // Others
+  CH: { currency: "CHF", starter: "CHF 900+", growth: "CHF 2,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  NO: { currency: "NOK", starter: "NOK 8,000+", growth: "NOK 20,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  SE: { currency: "SEK", starter: "SEK 8,000+", growth: "SEK 20,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+};
+   const pricing =
+    pricingMap[country] || pricingMap.IN;
   return (
     <section id="pricing" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
@@ -27,7 +67,7 @@ export function PricingComparison() {
                Starter Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-               ₹25k - ₹50k
+                {pricing.starter}
               </div>
               <p className="mt-2">*Perfect for small businesses*</p>
             </div>
@@ -86,7 +126,7 @@ export function PricingComparison() {
                 Growth Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ₹50k - ₹1.5L
+                {pricing.growth}
               </div>
             <p className="mt-2">*Perfect for growing businesses*</p>
             <p className="mt-0">Everything in Starter +</p>
@@ -128,7 +168,7 @@ export function PricingComparison() {
                 Enterprise Plan
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                ₹1.5L+
+                {pricing.enterprise}
               </div>
             <p className="mt-2">*Perfect for large organizations*</p>
             <p className="mt-0">Everything in Business Pro +</p>
@@ -173,7 +213,7 @@ export function PricingComparison() {
                 AI & Automation
               </h3>
               <div className="text-4xl font-bold text-gradient-orange">
-                 ₹2L+
+                 {pricing.automation}
               </div>
               <p className="mt-2">*Perfect for established companies*</p>
               <p className="mt-2">Everything in Growth +</p>
