@@ -8,10 +8,12 @@ import AccessibilityButton from '@/components/sections/accessibilityButton';
 import AccessibilityPanel from '@/components/sections/accessibilityPanel';
 import { AccessibilityProvider } from '@/components/sections/accessibilityProvider';
 import {getMessages} from 'next-intl/server';
+import { CONFIG } from "@/lib/config";
 
 // ✅ i18n ADD
 import { NextIntlClientProvider } from 'next-intl';
-
+const isProduction =
+  process.env.VERCEL_ENV === "production";
 const geistSans = Geist({ 
   subsets: ["latin"],
   variable: "--font-geist-sans",
@@ -118,12 +120,19 @@ export default async function RootLayout({
 
         </ThemeProvider>
 
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <GoogleTagManager gtmId="GTM-NGSMM74C" />
-            <GoogleAnalytics gaId="G-4EEMQTK68G" />
-          </>
-        )}
+
+
+{isProduction && (
+  <>
+    {CONFIG.gtmId && (
+      <GoogleTagManager gtmId={CONFIG.gtmId} />
+    )}
+
+    {CONFIG.gaId && (
+      <GoogleAnalytics gaId={CONFIG.gaId} />
+    )}
+  </>
+)}
 
       </body>
     </html>
