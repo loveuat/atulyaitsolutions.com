@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 import {
-  Navbar,
+  HeaderLanding,
   Hero,
   CTA,
   ServicesGrid,
@@ -44,7 +44,7 @@ export default function Home() {
       />
 
       <main className="min-h-screen bg-background">
-        <Navbar />
+        <HeaderLanding />
         <Hero />
         <ServicesGrid />
         <LandingForm />

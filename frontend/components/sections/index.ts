@@ -26,6 +26,9 @@ export { PrivacyPolicyPage } from "./privacy-policy";
 export { TermsOfServicePage } from "./terms-of-service";
 export { TestimonialEmblaSlider } from "./TestimonialSlider";
 export { LandingForm } from "./landing-form";
+export { HeaderLanding } from "./header-landing";
+
+
 
 
 
