@@ -129,7 +129,7 @@ if (element) {
         "select-2": form.order_timeframe,
         "select-3": form.order_referer,
         "consent-1": form.consent,
-        "checkbox-1-3": form.news_checkbox
+        "checkbox-1": form.news_checkbox
       }
     };
 
