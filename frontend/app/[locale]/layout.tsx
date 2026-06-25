@@ -7,6 +7,7 @@ import '../globals.css'
 import AccessibilityButton from '@/components/sections/accessibilityButton';
 import AccessibilityPanel from '@/components/sections/accessibilityPanel';
 import { AccessibilityProvider } from '@/components/sections/accessibilityProvider';
+import {getMessages} from 'next-intl/server';
 
 // ✅ i18n ADD
 import { NextIntlClientProvider } from 'next-intl';
@@ -68,7 +69,7 @@ export const viewport: Viewport = {
   ],
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params
 }: {
@@ -77,7 +78,7 @@ export default function RootLayout({
 }) {
 
   const locale = params?.locale || 'en';
-
+  const messages = await getMessages();
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -87,7 +88,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang={locale} className="bg-background" suppressHydrationWarning>
+    <html lang={locale}  className="bg-background" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
 
         <script
@@ -105,7 +106,7 @@ export default function RootLayout({
         >
           
           {/* ✅ i18n Provider ADDED (safe wrapping only) */}
-          <NextIntlClientProvider locale={locale}>
+          <NextIntlClientProvider locale={locale}  messages={messages}>
             
             {/* <AccessibilityProvider> */}
             {children}
