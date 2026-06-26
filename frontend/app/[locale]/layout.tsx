@@ -44,6 +44,17 @@ export const metadata: Metadata = {
     "Website Maintenance",
     "Digital Marketing",
   ],
+   applicationName: "Atulya IT Solutions",
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Atulya IT",
+  },
+
+  formatDetection: {
+    telephone: false,
+  },
 
   icons: {
     icon: [
