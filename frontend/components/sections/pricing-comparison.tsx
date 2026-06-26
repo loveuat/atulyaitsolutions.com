@@ -15,30 +15,70 @@ const pricingMap: Record<
   }
 > = {
   // Asia
-  IN: { currency: "INR", starter: "₹15k - ₹50k", growth: "₹50k - ₹1L+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  AE: { currency: "AED", starter: "AED 2,500+", growth: "AED 5,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
-  SG: { currency: "SGD", starter: "S$700+", growth: "S$1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  JP: { currency: "JPY", starter: "¥80,000+", growth: "¥150,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  IN: { currency: "INR", starter: "₹15k - ₹50k", growth: "₹50k - ₹1L+", enterprise: "₹1L - ₹3L+", automation: "₹3L+" },
+  AE: { currency: "AED", starter: "AED 2,500+", growth: "AED 5,000+", enterprise: "AED 10,000+", automation: "AED 18,000+" },
+  SG: { currency: "SGD", starter: "S$700+", growth: "S$1,500+", enterprise: "S$3,000+", automation: "S$5,000+" },
+  JP: { currency: "JPY", starter: "¥80,000+", growth: "¥150,000+", enterprise: "¥300,000+", automation: "¥500,000+" },
+  CN: { currency: "CNY", starter: "¥3,500+", growth: "¥10,000+", enterprise: "¥20,000+", automation: "¥35,000+" },
+  HK: { currency: "HKD", starter: "HK$4,000+", growth: "HK$10,000+", enterprise: "HK$20,000+", automation: "HK$35,000+" },
+  TW: { currency: "TWD", starter: "NT$18,000+", growth: "NT$40,000+", enterprise: "NT$80,000+", automation: "NT$150,000+" },
+  KR: { currency: "KRW", starter: "₩800,000+", growth: "₩2,000,000+", enterprise: "₩4,000,000+", automation: "₩7,000,000+" },
+  MY: { currency: "MYR", starter: "RM2,500+", growth: "RM6,000+", enterprise: "RM12,000+", automation: "RM20,000+" },
+  TH: { currency: "THB", starter: "฿18,000+", growth: "฿45,000+", enterprise: "฿90,000+", automation: "฿160,000+" },
+  VN: { currency: "VND", starter: "₫12,000,000+", growth: "₫30,000,000+", enterprise: "₫60,000,000+", automation: "₫100,000,000+" },
+  ID: { currency: "IDR", starter: "Rp8,000,000+", growth: "Rp20,000,000+", enterprise: "Rp40,000,000+", automation: "Rp70,000,000+" },
+  PH: { currency: "PHP", starter: "₱30,000+", growth: "₱75,000+", enterprise: "₱150,000+", automation: "₱250,000+" },
+  PK: { currency: "PKR", starter: "PKR 150,000+", growth: "PKR 400,000+", enterprise: "PKR 800,000+", automation: "PKR 1,500,000+" },
+  BD: { currency: "BDT", starter: "৳60,000+", growth: "৳150,000+", enterprise: "৳300,000+", automation: "৳500,000+" },
+  LK: { currency: "LKR", starter: "Rs 150,000+", growth: "Rs 350,000+", enterprise: "Rs 700,000+", automation: "Rs 1,200,000+" },
+  NP: { currency: "NPR", starter: "NPR 40,000+", growth: "NPR 100,000+", enterprise: "NPR 250,000+", automation: "NPR 400,000+" },
+
+  // Middle East
+  SA: { currency: "SAR", starter: "SAR2,000+", growth: "SAR5,000+", enterprise: "SAR10,000+", automation: "SAR18,000+" },
+  QA: { currency: "QAR", starter: "QAR2,000+", growth: "QAR5,000+", enterprise: "QAR10,000+", automation: "QAR18,000+" },
+  KW: { currency: "KWD", starter: "KD170+", growth: "KD450+", enterprise: "KD900+", automation: "KD1,500+" },
+  OM: { currency: "OMR", starter: "OMR200+", growth: "OMR500+", enterprise: "OMR900+", automation: "OMR1,500+" },
+  BH: { currency: "BHD", starter: "BD200+", growth: "BD500+", enterprise: "BD900+", automation: "BD1,500+" },
+  IL: { currency: "ILS", starter: "₪2,000+", growth: "₪5,000+", enterprise: "₪10,000+", automation: "₪18,000+" },
 
   // Europe
-  FR: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  DE: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  IT: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  ES: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  NL: { currency: "EUR", starter: "€800+", growth: "€2,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
-  BE: { currency: "EUR", starter: "€700+", growth: "€1,500+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  FR: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  DE: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  IT: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  ES: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  NL: { currency: "EUR", starter: "€800+", growth: "€2,000+", enterprise: "€3,500+", automation: "€6,000+" },
+  BE: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  AT: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  IE: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  PT: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  DK: { currency: "DKK", starter: "DKK5,000+", growth: "DKK12,000+", enterprise: "DKK25,000+", automation: "DKK40,000+" },
+  FI: { currency: "EUR", starter: "€700+", growth: "€1,500+", enterprise: "€3,000+", automation: "€5,000+" },
+  PL: { currency: "PLN", starter: "PLN3,000+", growth: "PLN8,000+", enterprise: "PLN15,000+", automation: "PLN25,000+" },
+  CH: { currency: "CHF", starter: "CHF900+", growth: "CHF2,500+", enterprise: "CHF5,000+", automation: "CHF8,000+" },
+  NO: { currency: "NOK", starter: "NOK8,000+", growth: "NOK20,000+", enterprise: "NOK40,000+", automation: "NOK60,000+" },
+  SE: { currency: "SEK", starter: "SEK8,000+", growth: "SEK20,000+", enterprise: "SEK40,000+", automation: "SEK60,000+" },
 
-  // English-speaking markets
-  US: { currency: "USD", starter: "$500 - $1000", growth: "$1000 - $3000" , enterprise: "$3000+", automation: "$5000+"},
-  CA: { currency: "CAD", starter: "CA$1,200+", growth: "CA$3,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
-  GB: { currency: "GBP", starter: "£800+", growth: "£2,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  AU: { currency: "AUD", starter: "A$1,500+", growth: "A$3,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  NZ: { currency: "NZD", starter: "NZ$1,500+", growth: "NZ$3,500+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
+  // English-speaking Markets
+  US: { currency: "USD", starter: "$500 - $1,000", growth: "$1,000 - $3,000", enterprise: "$3,000+", automation: "$5,000+" },
+  CA: { currency: "CAD", starter: "CA$1,200+", growth: "CA$3,000+", enterprise: "CA$5,000+", automation: "CA$8,000+" },
+  GB: { currency: "GBP", starter: "£800+", growth: "£2,000+", enterprise: "£4,000+", automation: "£6,000+" },
+  AU: { currency: "AUD", starter: "A$1,500+", growth: "A$3,500+", enterprise: "A$6,000+", automation: "A$10,000+" },
+  NZ: { currency: "NZD", starter: "NZ$1,500+", growth: "NZ$3,500+", enterprise: "NZ$6,000+", automation: "NZ$10,000+" },
 
-  // Others
-  CH: { currency: "CHF", starter: "CHF 900+", growth: "CHF 2,500+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
-  NO: { currency: "NOK", starter: "NOK 8,000+", growth: "NOK 20,000+" , enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+"},
-  SE: { currency: "SEK", starter: "SEK 8,000+", growth: "SEK 20,000+", enterprise: "₹50k - ₹1L+", automation: "₹50k - ₹1L+" },
+  // Americas
+  MX: { currency: "MXN", starter: "MX$10,000+", growth: "MX$25,000+", enterprise: "MX$50,000+", automation: "MX$80,000+" },
+  BR: { currency: "BRL", starter: "R$3,000+", growth: "R$8,000+", enterprise: "R$15,000+", automation: "R$25,000+" },
+  AR: { currency: "ARS", starter: "ARS600,000+", growth: "ARS1,500,000+", enterprise: "ARS3,000,000+", automation: "ARS5,000,000+" },
+  CL: { currency: "CLP", starter: "CLP500,000+", growth: "CLP1,200,000+", enterprise: "CLP2,500,000+", automation: "CLP4,000,000+" },
+
+  // Africa
+  ZA: { currency: "ZAR", starter: "R10,000+", growth: "R25,000+", enterprise: "R50,000+", automation: "R80,000+" },
+  EG: { currency: "EGP", starter: "E£25,000+", growth: "E£60,000+", enterprise: "E£120,000+", automation: "E£200,000+" },
+  NG: { currency: "NGN", starter: "₦800,000+", growth: "₦2,000,000+", enterprise: "₦4,000,000+", automation: "₦7,000,000+" },
+  KE: { currency: "KES", starter: "KSh70,000+", growth: "KSh180,000+", enterprise: "KSh350,000+", automation: "KSh600,000+" },
+
+  // Oceania
+  FJ: { currency: "FJD", starter: "FJ$1,200+", growth: "FJ$3,000+", enterprise: "FJ$6,000+", automation: "FJ$10,000+" },
 };
    const pricing =
     pricingMap[country] || pricingMap.IN;
