@@ -1,7 +1,7 @@
 import {
   Navbar,
   Hero,
-  ContactForm,
+  LandingForm,
   Footer,
   CTA,
 } from "@/components/sections";
@@ -17,7 +17,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <ContactForm/>
+      <LandingForm/>
       <CTA/>
      <Footer />
     </main>
