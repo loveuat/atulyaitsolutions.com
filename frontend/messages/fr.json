@@ -112,5 +112,95 @@
     "description": "Que vous ayez besoin d’un développeur WordPress dédié, d’un développement full-stack ou d’une maintenance continue, nous vous aidons à concrétiser vos idées.",
     "contactButton": "Contactez-nous",
     "callButton": "Planifier un appel"
+  },
+
+    "LandingHero": {
+    "subtitle1": "Besoin d'un site web qui génère réellement des prospects ?",
+    "heading1": "Atulya IT Solutions aide les entreprises à bâtir des solutions rapides, modernes et évolutives.",
+    "cta1": "Obtenez votre devis gratuit dès aujourd'hui",
+    "trust11": "Économisez jusqu'à 30 %",
+    "trust22": "Consultation gratuite pour votre projet",
+    "trust33": "Solutions 100 % personnalisées",
+    "roles": {
+      "webSolutions1": "Solutions Web",
+      "digitalPlatforms1": "Plateformes numériques",
+      "scalableProducts1": "Produits évolutifs",
+      "customSystems1": "Systèmes sur mesure",
+      "enterpriseWebsites1": "Site web d'entreprise",
+      "modernApplications1": "Applications modernes"
+    }
+  },
+  "LandingForm": {
+    "title": "Contactez-nous",
+    "highlight": "Aujourd'hui",
+
+    "fullName": "Nom complet",
+    "email": "Adresse e-mail",
+    "service": "Choisir un service",
+    "selectService": "Sélectionnez un service",
+
+    "websiteDevelopment": "Développement de sites Web",
+    "wordpressDevelopment": "Développement WordPress",
+    "nextjsDevelopment": "Développement Next.js",
+    "seo": "Services SEO",
+    "ecommerce": "Développement eCommerce",
+    "ai": "Automatisation IA",
+    "other": "Autre",
+
+    "project": "Parlez-nous de votre projet",
+
+    "timeframe": "Délai du projet",
+    "timeframePlaceholder": "Quel est le délai de votre projet ?",
+    "asap": "J'en ai besoin dès que possible",
+    "notRush": "Je ne suis pas pressé",
+
+    "referrer": "Référence",
+    "referrerPlaceholder": "Comment avez-vous entendu parler de nous ?",
+    "paidAds": "Publicité payante",
+    "organic": "Recherche organique",
+    "returning": "Client existant",
+    "referral": "Recommandation",
+
+    "consent": "J'accepte d'être contacté par Atulya IT Solutions concernant ma demande. Je comprends que mes informations seront utilisées uniquement à des fins de communication et ne seront jamais partagées avec des tiers.",
+
+    "newsletter": "Je souhaite recevoir les actualités et les mises à jour des services d'Atulya IT Solutions.",
+
+    "submit": "Envoyer",
+    "loading": "Veuillez patienter...",
+
+    "captcha": "Veuillez vérifier le captcha.",
+
+    "success": "Merci ! Votre demande a été envoyée avec succès.",
+    "failed": "Impossible d'envoyer votre demande.",
+    "network": "Erreur réseau. Veuillez réessayer plus tard.",
+
+    "validation": {
+      "name": "Le nom doit contenir au moins 2 caractères.",
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "message": "Le message doit contenir au moins 10 caractères.",
+      "service": "Veuillez sélectionner un service.",
+      "consent": "Vous devez accepter la politique de confidentialité."
+    }
+  },
+
+  "LandingFooter": {
+    "company": "Atulya IT Solutions",
+    "description": "Engagez des développeurs WordPress, Next.js et Full Stack expérimentés pour votre prochain projet. Livraison rapide, communication transparente et assistance à long terme.",
+
+    "trust": {
+      "experts": "Experts dédiés à 100 %",
+      "nda": "Protégé par un NDA",
+      "delivery": "Livraison rapide"
+    },
+
+    "heading": "Construisons quelque chose de grand",
+    "subheading": "Parlez-nous de votre projet et bénéficiez d'une consultation gratuite.",
+
+    "cta": "Obtenir une consultation gratuite",
+
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+
+    "copyright": "© 2026 Atulya IT Solutions. Tous droits réservés."
   }
 }

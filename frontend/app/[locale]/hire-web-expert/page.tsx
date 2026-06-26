@@ -5,11 +5,11 @@ import Script from "next/script";
 
 import {
   Navbar,
-  Hero,
+  LandingHero,
   CTA,
   ServicesGrid,
   LandingForm,
-  Footer,
+  LandingFooter,
 } from "@/components/sections";
 
 export const metadata: Metadata = {
@@ -45,11 +45,11 @@ export default function Home() {
 
       <main className="min-h-screen bg-background">
         <Navbar />
-        <Hero />
+        <LandingHero />
         <ServicesGrid />
         <LandingForm />
          <CTA />
-        <Footer />
+        <LandingFooter />
       </main>
     </>
   );
